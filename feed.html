@@ -20,6 +20,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <script>
+$(document).ready(function(){
 $.get('http://w-a-n-n.github.io/newsfeed.xml', function (data) {
     $(data).find("entry").each(function () { 
         var el = $(this);
@@ -32,6 +33,7 @@ $.get('http://w-a-n-n.github.io/newsfeed.xml', function (data) {
         $("#" + id).append("<div class='panel-body'>"+description+"</div>");
         $("#" + id).append("<div class='panel-footer'><em>Subscribe to the feed to stay up to date</em></div>");
     });
+});
 });
 </script>
 </head>
