@@ -26,13 +26,12 @@ body {
 	background: none;
 	}
 	.full {
-  		background: url("https://1suddo2kmul411y9l03duj9d-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/Sabori-angel-ornamental-structure-676x1024.jpg") no-repeat center center fixed; 
+  		background: url("img/webtreats-seamless-cloud-2.jpg") center center fixed; 
   		-webkit-background-size: cover;
   		-moz-background-size: cover;
   		-o-background-size: cover;
   		background-size: cover;
-  		background-position: center;
-  		background-attachment: fixed;
+  		background-repeat: repeat-y;
 }
 
 }
