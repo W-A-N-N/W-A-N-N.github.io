@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
       <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <script>
-$.get('http://stackoverflow.com/feeds/question/10943544', function (data) {
+$.get('http://w-a-n-n.github.io/newsfeed.xml', function (data) {
     $(data).find("entry").each(function () { 
         var el = $(this);
         var id = el.find("guid").text();
