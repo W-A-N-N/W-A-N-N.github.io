@@ -23,6 +23,25 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<script>
+		$(document).ready(function(){
+			$("#news").click(function(){
+$.get('http://w-a-n-n.github.io/newsfeed.xml', function (data) {
+    $(data).find("entry").each(function () { 
+        var el = $(this);
+        var id = el.find("guid").text();
+        var title = el.find("title").text();
+        var description = el.find("description").html();
+        
+        $(".feed").append("<div id='"+id+"' class='panel panel-default'></div>");
+        $("#" + id).append("<div class='panel-heading'><h2>"+title+"</h2></div>");
+        $("#" + id).append("<div class='panel-body'>"+description+"</div>");
+        $("#" + id).append("<div class='panel-footer'><em>Subscribe to the feed to stay up to date</em></div>");
+    });
+});
+});
+});
+	</script>
 </head>
 
 <body>
@@ -44,7 +63,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">News</a>
+                        <a href="#" id="news">News</a>
                     </li>
                     <li>
                         <a href="#">Official BOSSA</a>
@@ -70,6 +89,13 @@
 			<div class="well">
                 <p>Giving you the latest from the Skies Of Worlds Adrift, <a href="kudos.html">About us</a>.</p>
             </div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="well">
+					<div class="feed">
+						
+					</div>
+				</div>
 			</div>
         </div>
         <!-- /.row -->
