@@ -24,23 +24,13 @@
     <![endif]-->
 
 	<script>
-		$(document).ready(function(){
-			$("#news").click(function(){
-				$.get('newsfeed.xml', function (data) {
-    					$(data).find("entry").each(function () { 
-					 var el = $(this);
-        				var id = el.find("guid").text();
-        				var title = el.find("title").text();
-        				var description = el.find("description").html();
+	
         
         				$(".feed").append("<div id='"+id+"' class='panel panel-default'></div>");
         				$("#" + id).append("<div class='panel-heading'><h2>"+title+"</h2></div>");
         				$("#" + id).append("<div class='panel-body'>"+description+"</div>");
         				$("#" + id).append("<div class='panel-footer'><em>Subscribe to the feed to stay up to date</em></div>");
-    });
-});
-});
-});
+
 	</script>
 </head>
 
@@ -107,6 +97,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Parseing Javascript -->
+    <script src="js/primary.js"></script>
 
 </body>
 
