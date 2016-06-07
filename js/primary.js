@@ -17,10 +17,10 @@ $.ajax({
                   $("#" + id).append("<div class='panel-body'><strong>"+title+"</strong><br>"+desc+"</div>");
       });
         				$("#" + id).append("<div class='panel-footer'><em>Subscribe to the feed to stay up to date</em></div>");
-    })
-  }
+    });
+  },
   
   error: function(data){
     $(".feed").append("<h2>Sorry, there was an error fetching the feed</h2>")
-  }
-})
+  },
+});
