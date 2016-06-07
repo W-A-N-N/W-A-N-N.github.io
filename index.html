@@ -26,7 +26,7 @@
 	<script>
 		$(document).ready(function(){
 			$("#news").click(function(){
-				$.get('http://w-a-n-n.github.io/newsfeed.xml', function (data) {
+				$.get('newsfeed.xml', function (data) {
     					$(data).find("entry").each(function () { 
 					 var el = $(this);
         				var id = el.find("guid").text();
