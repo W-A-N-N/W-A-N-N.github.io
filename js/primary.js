@@ -9,7 +9,7 @@ $.ajax({
       var story = 0
       var id = $(this).attr("no");
      
-        				$(".feed").prepend("<div id='"+id+"' class='panel panel-default'></div>");
+        				$(".feed").append("<div id='"+id+"' class='panel panel-default'></div>");
         				$("#" + id).append("<div class='panel-heading'><h2>"+header+"</h2></div>");
                 $(this).find("story").each(function(){
                   var title = $(this).find("title").text();
