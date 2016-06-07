@@ -7,17 +7,16 @@ $.ajax({
     $(data).find("wannfeed item").each(function(){
       var header = $(this).find("header").text();
       var story = 0
-      $(data).find("wannfeed item story").each(function(){
-        var title = $(this).find("title").text();
-        var desc = $(this).find("desc").text();
-        story = story + 1
+     
+        				$(".feed").prepend("<div id='"+id+"' class='panel panel-default'></div>");
+        				$("#" + id).append("<div class='panel-heading'><h2>"+header+"</h2></div>");
+                $(this).find("story").each(function(){
+                  var title = $(this).find("title").text();
+                  var desc = $(this).find("desc").text();
+                  story = story + 1
+                  $("#" + id).append("<div class='panel-body'><strong>"+title+"</strong><br>"+desc+"</div>");
       });
-      if(story > 1){
-        
-      }
-      else{
-        $(".feed").prepend
-      }
+        				$("#" + id).append("<div class='panel-footer'><em>Subscribe to the feed to stay up to date</em></div>");
     })
   }
   
