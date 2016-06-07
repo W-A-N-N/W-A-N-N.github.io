@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
-<channel>
-<title>Worlds Adrift News Network - News</title>
-<link>http://w-a-n-n.github.io</link>
-<description>The Latest news from the skies of Worlds Adrift</description>
+<wannfeed version="1.0" archive="false">
 
-
-<item>
-  <title>GOOOOOD MOOOORNIIING WOOOORLDS AAADRIFT</title>
-  <link>http://w-a-n-n.github.io/feed.html#1</link>
-  <guid>http://w-a-n-n.github.io/feed.html#1</guid>
-  <pubDate>Wed, 2 Jun 2016 06:00:00 GMT</pubDate>
-  <description>We've gone live!! From fleet v fleet battles to a Propaganda war, we've got you covered, no more shall the players be in the dark, welcome to the light!
-<strong>Story #1: Grammar Drama</strong>
-Sky Drifter @Greenjuice has openly attacked Armada chronicler @OldRockGod saying his chronicles of the Armada are flawed containing many grammatical errors! The Armada have yet to respond publicly.
-<strong>Story #2: #BEABRICKFORAMANDA</strong>
-More drama as the Sky Drifters launched the #beabrick campaign, the post was later moved by Mod and Head Drifter @Day0x into their private forum.</description>
+<item no="2" for="everyone">
+  <header>Weekly Round up: June 1 / 2016 </header>
+  <story>
+    <title>Grammar Drama</title>
+  <desc>
+    Drifter @Greenjuice has openly criticised the Armada's chronicler for his Creative Writing piece pointing out many grammatical flaws!
+  </desc>
+  </story>
+  <story>
+    <title>#BEABRICKFORAMANDA</title>
+    <desc>
+      The drifters in it again with the campaign #beabrickforamanda started on General Discussion and then later moved to the Drifters Private forums by mod @Day0x
+    </desc>
+  </story>
 </item>
-</channel>
-</rss>
+
+<item no="1" for="everyone">
+  <header>LIVE!</header>
+  <story>
+  <title>GOOOOOD MOOOORNIIING WOOOORLDS AAADRIFT</title>
+  <desc>  We've gone live!! From fleet v fleet battles to a Propaganda war, we've got you covered, no more shall the players be in the dark, welcome to the light!</desc>
+  </story>
+</item>
+</wannfeed>
