@@ -7,6 +7,7 @@ $.ajax({
     $(data).find("wannfeed item").each(function(){
       var header = $(this).find("header").text();
       var story = 0
+      var id = $(this).attr("no");
      
         				$(".feed").prepend("<div id='"+id+"' class='panel panel-default'></div>");
         				$("#" + id).append("<div class='panel-heading'><h2>"+header+"</h2></div>");
