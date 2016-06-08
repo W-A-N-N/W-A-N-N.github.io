@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <wannfeed version="1.0" archive="false">
+  
+  <item id="3">
+	<header>Weekly WA: 8th June</header>
+	<story>
+	<title>Grammar drama: Part 2</title>
+	<desc>
+	@Vick-viper89 responded to the Drifters challenge by reassuring their population-based superiority in the Creative Writing thread as well as confirming the GSA's stance on Piracy!
+	</desc>
+	</story>
+	<story>
+	<title>Alliance Watch</title>
+	<desc>
+	We went through the top 2 Alliance pages and picked our favourites, here we go:
+	Our alliance of the week is The Glorious Sky Armada, for they're currently supreme population. They seek to unite the world under their one banner!
+	</desc>
+	</story>
+	<story>
+	<title>Forum Watch</title>
+	<desc>
+	We went through mounds of General Discussion and Suggestions and Creative Writing and got our fave post from all time!
+	This week its: Founders Packs!!! Check it out on General.
+	</desc>
+	</story>
+</item>
 
 <item no="2" for="everyone">
   <header>Weekly Round up: June 1 / 2016 </header>
