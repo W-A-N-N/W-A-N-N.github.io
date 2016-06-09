@@ -17,7 +17,7 @@ $.ajax({
                   story = story + 1
                   $("#" + id).append("<div class='panel-body'><strong>"+title+"</strong><br>"+desc+"</div>");
       });
-        				$("#" + id).append("<div class='panel-footer'><em>Subscribe to the feed to stay up to date</em></div>");
+        				$("#" + id).append("<div class='panel-footer'><em>Stay up to date on the forums and all WA news</em></div>");
     });
   },
   
