@@ -13,7 +13,7 @@ $.ajax({
         				$("#" + id).append("<div class='panel-heading'><h2>"+header+"</h2></div>");
                 $(this).find("story").each(function(){
                   var title = $(this).find("title").text();
-                  var desc = $(this).find("desc").text();
+                  var desc = $(this).find("desc p").html();
                   story = story + 1
                   $("#" + id).append("<div class='panel-body'><strong>"+title+"</strong><br>"+desc+"</div>");
       });
