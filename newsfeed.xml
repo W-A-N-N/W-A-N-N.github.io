@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <wannfeed version="1.0" archive="false">
+	
+	<item no="4">
+		<header>Weekly WA: 15th June</header>
+		<story>
+			<title>GAME UPDATE!</title>
+			<desc>
+				<p>The blog this week gives us an insight into the modular mechanics in Worlds Adrift!<a href="https://www.worldsadrift.com/blog/modular-mechanics/">Look here!</a> As well as showing us some amazing designs of the cannons, wings and engines to put on our Sky Ships.</p>
+			</desc>
+		</story>
+		<story>
+			<title>Feature Spotlight!</title>
+			<desc>
+				<p>For those players who missed it, this weeks favourite feature is: Player Spawning! Bossa said <a href="https://www.worldsadrift.com/forums/topic/spawn-points/#post-3301">here</a> that players will be spawned in regions deemed 'safe' from other players. Though it is good to note that this system wont be perfect and might end up in early game skirmishes.</p>
+			</desc>
+		</story>
+		<story>
+			<title>Forum Watch:</title>
+			<desc>
+				<p>Check out the <a href="https://www.worldsadrift.com/forums/topic/discord-server-for-worlds-adrift/">Discord Server</a> to chat about the game with other like-minded people on Discord!</p>
+			</desc>
+		</story>
+		<story>
+			<title>Alliance Watch:</title>
+			<desc>
+				<p>This weeks alliance is: <a href="https://www.worldsadrift.com/alliances/ryder/">Ryder</a>, who are a loose coalition of ships with a Chaotic Neutral alignement, Watch out!</p>
+			</desc>
+		</story>
+	</item>
   
   <item no="3">
 	<header>Weekly WA: 8th June</header>
