@@ -31,7 +31,7 @@
 
 	});
 				return vars;
-	}
+	};
  	$(document).ready(function(){
  		var term = getUrlVars()["search"];
  		if(term != ""){
@@ -44,19 +44,11 @@
 <body>
 
    <script>
-
-
-	
 	function search(){
-			event.preventDefault();
+		event.preventDefault();
 		var term = getUrlVars()["search"];
-		
 		$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
-		
-	
 	};
-
-
     </script>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
