@@ -34,7 +34,7 @@
 	$("form").on("submit", function(e){
 		var term = getUrlVars()["search"];
 		
-		$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>")
+		$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
 		
 		e.preventDefault();
 	});
