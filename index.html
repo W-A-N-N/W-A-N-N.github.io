@@ -24,18 +24,22 @@
     <![endif]-->
     <script>
     	function getUrlVars() {
-var vars = {};
-var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-vars[key] = value;
-});
-return vars;
-}
-function search(){
-var searchterm = getUrlVars()["search"]
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		vars[key] = value;
+	});
+	return vars;
+	}
+	
+	$("#search-bar").on("submit", function(e){
+		var term = getUrlVars()["search"];
+		
+		$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>")
+		
+		e.preventDefault();
+	});
 
-$(".feed").empty()
-$(".feed").prepend(searchterm)
-}
+
     </script>
 </head>
 
@@ -67,7 +71,7 @@ $(".feed").prepend(searchterm)
                         <a href="https://www.worldsadrift.com/forums/">Official Forums</a>
                     </li>
                     <li>
-                     <form class="navbar-form" role="search" action="search()">
+                     <form class="navbar-form" role="search" id="search-bar">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="[WIP] I'm working on it!" name="search" id="search">
             <div class="input-group-btn">
