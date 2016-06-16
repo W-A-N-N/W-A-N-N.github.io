@@ -36,7 +36,7 @@
 	return vars;
 	}
 	
-	$("form").on("submit", function(e){
+	function search(e){
 		var term = getUrlVars()["search"];
 		
 		$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
@@ -72,7 +72,7 @@
                         <a href="https://www.worldsadrift.com/forums/">Official Forums</a>
                     </li>
                     <li>
-                     <form class="navbar-form" role="search" id="search-bar">
+                     <form class="navbar-form" role="search" id="search-bar" onclick="return search()">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="[WIP] I'm working on it!" name="search" id="search">
             <div class="input-group-btn">
