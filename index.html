@@ -36,12 +36,12 @@
 	return vars;
 	}
 	
-	function search(e){
+	function search(){
 		var term = getUrlVars()["search"];
 		
 		$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
 		
-		e.preventDefault();
+		event.preventDefault();
 	};
 
 
