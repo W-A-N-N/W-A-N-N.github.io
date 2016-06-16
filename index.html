@@ -28,13 +28,16 @@
 		var vars = {};
 		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
 		vars[key] = value;
+
 	});
+				return vars;
+	}
  	$(document).ready(function(){
  		var term = getUrlVars()["search"];
  		if(term != ""){
  			$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
  		}
- 	})
+ 	});
  </script>
 </head>
 
@@ -42,15 +45,15 @@
 
    <script>
 
-	return vars;
-	}
+
 	
 	function search(){
+			event.preventDefault();
 		var term = getUrlVars()["search"];
 		
 		$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
 		
-		event.preventDefault();
+	
 	};
 
 
