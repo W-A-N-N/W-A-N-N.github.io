@@ -38,6 +38,7 @@
 	<script>
  	$(document).ready(function(){
  		var term = getUrlVars()["search"];
+ 		term.replace(/\+/g,' ');
  		if(term != null){
  			$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
  		}
