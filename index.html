@@ -41,7 +41,7 @@
   var results;
 $.ajax({
   url: "newsfeed.xml",
-  datatype: "xml";
+  datatype: "xml",
   success: function(data){
     $(data).find("wannfeed item").each(function(){
       var results = "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</div>";
@@ -83,14 +83,14 @@ else {
 	<script>
  	$(document).ready(function(){
  		var term = getUrlVars()["search"];
- 		term = term.replace(/\+/g," ");
- 		if(term !== null){
- 			var turn = search(term);
- 			if(turn === false){
+ 		clean = term.replace(/\+/g," ");
+ 		if(clean !== null){
+ 			var turn = search(clean);
+ 			if(clean === false){
  			$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
  			}
  			}
- 		else if(term === " "){
+ 		else if(clean === " "){
  				$(".feed").prepend("<div class='alert alert-danger'>I wonder what the point in searching for '<strong> </strong>' is?</div>");	
  		}
  	});
