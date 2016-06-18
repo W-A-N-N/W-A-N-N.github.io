@@ -34,24 +34,22 @@
 
 	});
 		return vars;
-	};
-	
-	function searching(term) {
-
-	};
-	
+	}
+	</script>
+	<script>
+		
 	</script>
 	<script>
  	$(document).ready(function(){
  		var term = getUrlVars()["search"];
- 		term = term.replace(/\+/g,' ');
- 		if(term != null){
+ 		term = term.replace(/\+/g," ");
+ 		if(term !== null){
  			var turn = search(term);
- 			if(turn == false){
+ 			if(turn === false){
  			$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
  			}
  			}
- 		else if(term == " "){
+ 		else if(term === " "){
  				$(".feed").prepend("<div class='alert alert-danger'>I wonder what the point in searching for '<strong> </strong>' is?</div>");	
  		}
  	});
