@@ -53,10 +53,9 @@ $.ajax({
             var title = $(this).find("title").text();
             var desc = $(this).find("desc p").html();
             pos = term.test(String(desc));
-            if(pos = true){
+            if (pos = true) {
               results = results + "<div class='"+storyId+"'><strong>"+title+"</strong><br>"+desc+"</div>";
-            }
-            else{
+            } else {
               pos = term.test(title);
               if(pos == true){
                 results = results + "<div class='"+storyId+"'><strong>"+title+"</strong><br>"+desc+"</div>";
@@ -73,24 +72,23 @@ $.ajax({
   },
 });
 
-if(results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</div>")
+if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</div>"){
   return false;
-}
-else {
+} else {
   return true;
+}
 }
 	</script>
 	<script>
  	$(document).ready(function(){
  		var term = getUrlVars()["search"];
  		var clean = term.replace(/\+/g," ");
- 		if(clean !== null){
+ 		if (clean !== null) {
  			var turn = search(clean);
  			if(clean === false){
  			$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
  			}
- 			}
- 		else if(clean === " "){
+ 			} else if (clean === " ") {
  				$(".feed").prepend("<div class='alert alert-danger'>I wonder what the point in searching for '<strong> </strong>' is?</div>");	
  		}
  	});
