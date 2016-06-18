@@ -46,7 +46,8 @@
  		var term = getUrlVars()["search"];
  		term = term.replace(/\+/g,' ');
  		if(term != null){
- 			if(search(term) == false){
+ 			var turn = search(term);
+ 			if(turn == false){
  			$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
  			}
  			}
