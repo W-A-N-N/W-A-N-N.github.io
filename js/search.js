@@ -4,13 +4,29 @@ $.ajax({
   datatype: "xml",
   
   success: function(data){
+    
     $(data).find("wannfeed item").each(function(){
-          var header = $(this).find("header").text()
-          var desc = $(this).find("story desc p").html();
-          pos = term.test(String(desc));
-          if(pos = true){
-            $(".results").append("<div class='panel panel-primary' id='"+id+"'><div class='panel-heading'></div><div class='panel-body'></div><div class='panel-footer'><em>Search result for <strong>"+term+"</strong>.</em></div></div>")
-          }
+      var results = "<button class='btn btn-lg btn-danger' id="clear">Clear Search</div>";
+      var id = "search-" + $(this).attr("id");
+      var idStem = $(this).attr("id");
+          var header = $(this).find("header").text();
+          $(this).find("story").each(function(){
+            var searchId = $(this).attr("id");
+            var title = $(this).find("title").text();
+            var desc = $(this).find("desc p").html();
+            pos = term.test(String(desc));
+            if(pos = true){
+              results = results + "<div class='"+storyId+"'><strong>"+title+"</strong><br>"+desc+"</div>";
+            }
+            else{
+              pos = term.test(title);
+              if(pos == true){
+                results = results + "<div class='"+storyId+"'><strong>"+title+"</strong><br>"+desc+"</div>";
+              }
+            }
+          });
+        $(".results").append("<div class='panel panel-primary' id='"+id+"'><div class='panel-heading'><a href='"+idStem+"' stlye="text-decoration:none;">"+header+"</a></div><div class='panel-body'>"+results+"</div><div class='panel-footer'><em>Search result for <strong>"+term+"</strong>.</em></div></div>")
+
     });
   },
   
