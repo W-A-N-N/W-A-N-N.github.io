@@ -2,12 +2,10 @@ function search(term){
   var results;
 $.ajax({
   url: "newsfeed.xml",
-  datatype: "xml",
-  
+  datatype: "xml";
   success: function(data){
-    
     $(data).find("wannfeed item").each(function(){
-      var results = "<button class='btn btn-lg btn-danger' id="clear">Clear Search</div>";
+      var results = "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</div>";
       var id = "search-" + $(this).attr("id");
       var idStem = $(this).attr("id");
           var header = $(this).find("header").text();
@@ -26,7 +24,7 @@ $.ajax({
               }
             }
           });
-        $(".results").append("<div class='panel panel-primary' id='"+id+"'><div class='panel-heading'><a href='"+idStem+"' stlye="text-decoration:none;">"+header+"</a></div><div class='panel-body'>"+results+"</div><div class='panel-footer'><em>Search result for <strong>"+term+"</strong>.</em></div></div>")
+        $(".results").append("<div class='panel panel-primary' id='"+id+"'><div class='panel-heading'><a href='"+idStem+"' stlye='text-decoration:none;'>"+header+"</a></div><div class='panel-body'>"+results+"</div><div class='panel-footer'><em>Search result for <strong>"+term+"</strong>.</em></div></div>")
 
     });
   },
