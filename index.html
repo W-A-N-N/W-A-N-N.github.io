@@ -52,7 +52,8 @@ $.ajax({
             var searchId = $(this).attr("id");
             var title = $(this).find("title").text();
             var desc = $(this).find("desc p").html();
-            pos = term.test(String(desc));
+            var clean_term = new RegExp(term, i);
+            var pos = clean_term.test(String(desc));
             if (pos = true) {
               results = results + "<div class='"+storyId+"'><strong>"+title+"</strong><br>"+desc+"</div>";
             } else {
