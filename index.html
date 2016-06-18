@@ -73,7 +73,7 @@ $.ajax({
   },
 });
 
-if(results == "<button class='btn btn-lg btn-danger' id="clear">Clear Search</div>")
+if(results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</div>")
   return false;
 }
 else {
@@ -83,7 +83,7 @@ else {
 	<script>
  	$(document).ready(function(){
  		var term = getUrlVars()["search"];
- 		clean = term.replace(/\+/g," ");
+ 		var clean = term.replace(/\+/g," ");
  		if(clean !== null){
  			var turn = search(clean);
  			if(clean === false){
