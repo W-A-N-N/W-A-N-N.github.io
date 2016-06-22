@@ -86,7 +86,7 @@ if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</d
  		var clean = term.replace(/\+/g," ");
  		if (clean !== null) {
  			var turn = search(clean);
- 			if(clean === false){
+ 			if(turn === false){
  			$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
  			}
  			} else if (clean === " ") {
@@ -126,7 +126,7 @@ if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</d
                     <li>
                      <form class="navbar-form" role="search" id="search-bar" onsubmit="search()">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="[WIP] I'm working on it!" name="search" id="search">
+            <input type="text" class="form-control" placeholder="[WIP]" name="search" id="search">
             <div class="input-group-btn">
                 <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
             </div>
@@ -146,7 +146,7 @@ if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</d
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12">
-			<img alt="World Adrift News Network" src="https://images.cooltext.com/4701811.png"></img>
+			<img alt="World Adrift News Network" src="https://ares.cooltext.com/images/476/476c4da1b68a07372f6748de393bb4095cb84eff.png"></img>
 			<div class="well">
 				<!--<div class="alert alert-warning">
 					<strong>We're currently undergoing testing and maintenance</strong>, some features of the site may not work as expected. Sorry for any inconvenience caused. <span class="glyphicon glyphicon-warning-sign"></span>
