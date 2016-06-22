@@ -82,6 +82,7 @@ if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</d
 	</script>
 	<script>
  	$(document).ready(function(){
+ 		$("#search-bar").submit(function(event){
  		var term = getUrlVars()["search"];
  		var clean = term.replace(/\+/g," ");
  		if (clean !== null) {
@@ -92,6 +93,8 @@ if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</d
  			} else if (clean === " ") {
  				$(".feed").prepend("<div class='alert alert-danger'>I wonder what the point in searching for '<strong> </strong>' is?</div>");	
  		}
+ 		event.preventDefault();
+ 		});
  	});
  </script>
 </head>
@@ -124,7 +127,7 @@ if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</d
                         <a href="https://www.worldsadrift.com/forums/">Official Forums</a>
                     </li>
                     <li>
-                     <form class="navbar-form" role="search" id="search-bar" onsubmit="search()">
+                     <form class="navbar-form" role="search" id="search-bar">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="[WIP]" name="search" id="search">
             <div class="input-group-btn">
