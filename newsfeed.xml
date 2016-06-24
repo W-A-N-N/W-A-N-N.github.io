@@ -37,7 +37,7 @@
 				<p>Check out the <a href="https://www.worldsadrift.com/forums/topic/discord-server-for-worlds-adrift/">Discord Server</a> to chat about the game with other like-minded people on Discord!</p>
 			</desc>
 		</story>
-		<storyid="4-4">
+		<story id="4-4">
 			<title>Alliance Watch:</title>
 			<desc>
 				<p>This weeks alliance is: <a href="https://www.worldsadrift.com/alliances/ryder/">Ryder</a>,  who are a loose coalition of ships with a Chaotic Neutral alignment, Watch out!</p>
@@ -97,7 +97,7 @@
 
 <item no="1" for="everyone">
   <header>LIVE!</header>
-  <story  id="1-1">
+  <story id="1-1">
   <title>GOOOOOD MOOOORNIIING WOOOORLDS AAADRIFT</title>
   <desc><p>  We've gone live!! From fleet v fleet battles to a Propaganda war, we've got you covered, no more shall the players be in the dark, welcome to the light!</p></desc>
   </story>
