@@ -63,7 +63,11 @@ $.ajax({
             }
           });
         $(".results").append("<div class='panel panel-primary' id='"+id+"'><div class='panel-heading'><a href='"+idStem+"' stlye='text-decoration:none;'>"+header+"</a></div><div class='panel-body'>"+results+"</div><div class='panel-footer'><em>Search result for <strong>"+term+"</strong>.</em></div></div>")
-
+	if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</div>"){
+  return false;
+} else {
+  return true;
+}
     });
   },
   
@@ -72,11 +76,7 @@ $.ajax({
   },
 });
 
-if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</div>"){
-  return false;
-} else {
-  return true;
-}
+
 }
 
  	
@@ -89,7 +89,7 @@ if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</d
 <script>
 	$(document).ready(function(){
  		
- 		var term = getUrlVars()["search"];
+ 		var term = String(getUrlVars()["search"]);
  		var clean = term.replace(/\+/g," ");
  		var turn = search(clean);
  		event.preventDefault();
