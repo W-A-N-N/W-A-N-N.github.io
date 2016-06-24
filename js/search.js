@@ -1,11 +1,10 @@
-function search(term){
-		var results;
+	var results;
 		$.ajax({
   			url: "newsfeed.xml",
   			datatype: "xml",
   			success: function(data){
     				$(data).find("wannfeed item").each(function()
-    				var idStem = $(this).attr("id");
+    				idStem = $(this).attr("id");
     				var id = "search-"+idStem;
 				var results;
           			var header = $(this).find("header").text();
@@ -42,6 +41,3 @@ function search(term){
 				$(".results").append("<div class='panel panel-danger'><div class='panel-heading'><h2>Sorry, there was an error fetching the feed</h2></div><div class='panel-body'><p>Sorry, looks like I've done something wrong! Please try again later. If this error persists please report an issue <a href='https://github.com/W-A-N-N/W-A-N-N.github.io'>here</a></p></div></div>")
   			},
 		});
-	}
-
- 	
