@@ -5,7 +5,7 @@ function search(term){
   			url: "newsfeed.xml",
   			datatype: "xml",
   			success: function(data){
-    				$(data).find("wannfeed item").each(function()
+    				$(data).find("wannfeed item").each(function(){
     				var idStem = $(this).attr("id");
     				var id = "search-"+idStem;
 				var results;
