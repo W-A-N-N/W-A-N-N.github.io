@@ -771,7 +771,7 @@ function selectElementContents(el)
 
 // This part creates a visible button on the HTML page to
 // where the script is pasted in the HTML code
-document.write('<input type="button" value="Find on this page..."'
+document.write('<input class="btn btn-default" type="button" value="Find on this page..."'
 	+ ' onclick="show();">');
 	
 // Create the DIV
