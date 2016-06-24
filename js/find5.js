@@ -637,8 +637,6 @@ function create_div(dleft, dtop, dwidth, dheight)
     findwindow.style.backgroundColor = find_window_background;
     findwindow.style.border = '2px solid ' + find_window_border;
     findwindow.style.color = find_text_color;
-	findwindow.style.width = find_window_width + 'px';
-	findwindow.style.height = + find_window_height + 'px';
     findwindow.style.top = '20px';
 	findwindow.style.left = '20px';
 	findwindow.style.padding = '0px'; 
@@ -665,7 +663,7 @@ function create_div(dleft, dtop, dwidth, dheight)
 	+ ';border: 1px solid ' + find_text_color
 	+ ';float: right'
 	+ ';">'
-	+ 'X' // write the letter X
+	+ '&times' // write the letter X
 	+ '</div><br />\n';
 // This part creates the instructions and the "find" button
 	findwindow.innerHTML += '<div class="panel-body" id="window_body" style="padding: 5px;">'
