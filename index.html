@@ -88,19 +88,12 @@ if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</d
 
 <script>
 	$(document).ready(function(){
- 		$("#search-bar").submit(function(event){
+ 		
  		var term = getUrlVars()["search"];
  		var clean = term.replace(/\+/g," ");
- 		if (clean !== null) {
- 			var turn = search(clean);
- 			if(turn === false){
- 			$(".feed").prepend("<div class='alert alert-danger'>Your search for <strong>"+ term +"</strong> returned <strong>0</strong> results.</div>");
- 			}
- 			} else if (clean === " ") {
- 				$(".feed").prepend("<div class='alert alert-danger'>I wonder what the point in searching for '<strong> </strong>' is?</div>");	
- 		}
+ 		var turn = search(clean);
  		event.preventDefault();
- 		});
+ 	
 	});
 </script>
     <!-- Navigation -->
