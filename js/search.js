@@ -41,11 +41,11 @@ function search(term){
 		vars[key] = value;
 	});
 	return vars;
-	}
+	};
 	
- 	var term = String(getUrlVars()["search"]);
- 	var clean = term.replace(/\+/g," ");
- 	if(clean !== null){
- 		var turn = search(clean);
- 	};
+var term = String(getUrlVars()["search"]);
+var clean = term.replace(/\+/g," ");
+if(clean !== null){
+ 	var turn = search(clean);
+};
 
