@@ -42,10 +42,12 @@ $.ajax({
   url: "newsfeed.xml",
   datatype: "xml",
   success: function(data){
-    $(data).find("wannfeed item").each(function(){
-      var results = "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</div>";
-      var id = "search-" + $(this).attr("id");
-      var idStem = $(this).attr("id");
+    $(data).find("wannfeed item").each(function()
+     var idStem = $(this).attr("id");
+    var id = "search-"+idStem;
+     
+      var results;
+      
           var header = $(this).find("header").text();
           $(this).find("story").each(function(){
             var storyId = $(this).attr("id");
