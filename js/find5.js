@@ -34,7 +34,7 @@ var find_window_border = "blue"; // the border color of pop-up window
 var find_text_color = "black"; // the color of the text in window
 var find_title_color = "white"; // color of window title text
 var find_window_width = 245; // width of window
-var find_window_height = 85; // height of window
+var find_window_height = 185; // height of window
 var find_root_node = null; // Leave as null to search entire doc or put id of div to search (ex: 'content'). Ver 5.0a - 7/18/2014
 /* Do not edit the variables below this line */
 
@@ -630,7 +630,7 @@ function create_div(dleft, dtop, dwidth, dheight)
 	    findwindow.style.position = 'absolute';
         //document.body.appendChild(findwindow);
         document.body.insertBefore(findwindow, document.body.firstChild);
-        findwindow.className = 'findwindow dragme';
+        findwindow.className = 'findwindow dragme panel panel-default';
 		findwindow.style.visibility = 'hidden';
 	}
     
@@ -648,15 +648,14 @@ function create_div(dleft, dtop, dwidth, dheight)
 	//findwindow.style.display = "block";
 	
 	// This part creates the title bar
-	findwindow.innerHTML = '<div style="text-align: center'
-	+ ';width: ' + (find_window_width-20) + 'px'
+	findwindow.innerHTML = '<div class="panel-heading" style="text-align: center'
 	+ ';cursor: move'  // turn mouse arrow to move icon
 	+ ';color: ' + find_title_color
 	+ ';border: 1px solid ' + find_text_color
 	+ ';background-color: ' + find_window_border
 	+ ';float: left' 
 	+ ';" onmouseover="over=1;" onmouseout="over=0;">'
-	+ 'Find Window</div>';
+	+ 'Search WANN</div>';
 	// This part creates the closing X
 	findwindow.innerHTML += '<div onclick="hide();" class="close" style="text-align: center'
 	+ ';width: ' + (16) + 'px'
