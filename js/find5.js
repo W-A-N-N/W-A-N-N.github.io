@@ -653,18 +653,9 @@ function create_div(dleft, dtop, dwidth, dheight)
 	+ ';background-color: ' + find_window_border
 	+ ';float: left' 
 	+ ';" onmouseover="over=1;" onmouseout="over=0;">'
-	+ 'Search WANN</div><br>';
+	+ 'Search WANN <div class="close" onclick="hide();" style="background-color: red;">&times</div></div><br>';
 	// This part creates the closing X
-	findwindow.innerHTML += '<div onclick="hide();" class="close" style="text-align: center'
-	+ ';width: ' + (16) + 'px'
-	+ ';cursor: default' // make mouse arrow stay an arrow instead of turning to text arrow
-	+ ';font-weight: bold'
-	+ ';background-color: red'
-	+ ';border: 1px solid ' + find_text_color
-	+ ';float: right'
-	+ ';">'
-	+ '&times' // write the letter X
-	+ '</div><br />\n';
+
 // This part creates the instructions and the "find" button
 	findwindow.innerHTML += '<div class="panel-body" id="window_body" style="padding: 5px;">'
 	+ '<form onsubmit="return false;" role="form"><div class="form-group"><input class="form-control" type="search" size="25" maxlength="25" id="fwtext"'
@@ -768,7 +759,7 @@ function selectElementContents(el)
 
 // This part creates a visible button on the HTML page to
 // where the script is pasted in the HTML code
-document.write('<input class="btn btn-default navbar-btn" type="button" value="Find on this page..."'
+document.write('<input class="btn btn-default navbar-btn" type="button" value="Search WANN..."'
 	+ ' onclick="show();">');
 	
 // Create the DIV
