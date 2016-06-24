@@ -669,11 +669,11 @@ function create_div(dleft, dtop, dwidth, dheight)
 	+ 'X' // write the letter X
 	+ '</div><br />\n';
 // This part creates the instructions and the "find" button
-	findwindow.innerHTML += '<div id="window_body" style="padding: 5px;">'
+	findwindow.innerHTML += '<div class="panel-body" id="window_body" style="padding: 5px;">'
 	+ '<form onsubmit="return false;"><input type="search" size="25" maxlength="25" id="fwtext"'
 	+ ' onchange="resettext();" placeholder="Enter text to find">'
-	+ '<input type="button" value="Find Prev" onclick="findprev();">'
-	+ '<input id="btn" type="button" value="Find Next" onclick="this.blur(); findit();">' // ver 5.3 - 5/15/2015 - added this.blur();
+	+ '<input class="btn btn-primary" type="button" value="Find Prev" onclick="findprev();">'
+	+ '<input class="btn btn-primary" id="btn" type="button" value="Find Next" onclick="this.blur(); findit();">' // ver 5.3 - 5/15/2015 - added this.blur();
 	+ ' <span id="find_msg"><br /></span>'
 	+ '</form></div>\n';
 	// ^ ver 5.1 - 10/17/2014
@@ -771,7 +771,7 @@ function selectElementContents(el)
 
 // This part creates a visible button on the HTML page to
 // where the script is pasted in the HTML code
-document.write('<input class="btn btn-default" type="button" value="Find on this page..."'
+document.write('<input class="btn btn-default navbar-btn" type="button" value="Find on this page..."'
 	+ ' onclick="show();">');
 	
 // Create the DIV
