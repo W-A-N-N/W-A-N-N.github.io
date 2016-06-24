@@ -27,27 +27,17 @@
      
  
  <script>
-     	function getUrlVars() {
-		var vars = {};
-		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-		vars[key] = value;
 
-	});
-		return vars;
-	}
-
-		function search(term){
-  var results;
+function search(term){
+var results;
 $.ajax({
   url: "newsfeed.xml",
   datatype: "xml",
   success: function(data){
     $(data).find("wannfeed item").each(function()
-     var idStem = $(this).attr("id");
+    var idStem = $(this).attr("id");
     var id = "search-"+idStem;
-     
       var results;
-      
           var header = $(this).find("header").text();
           $(this).find("story").each(function(){
             var storyId = $(this).attr("id");
@@ -96,6 +86,15 @@ $.ajax({
 <body>
 
 <script>
+     	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		vars[key] = value;
+
+	});
+		return vars;
+	}
+
 	$(document).ready(function(){
  		
  		var term = String(getUrlVars()["search"]);
