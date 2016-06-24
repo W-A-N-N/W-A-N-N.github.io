@@ -669,7 +669,7 @@ function create_div(dleft, dtop, dwidth, dheight)
 	findwindow.innerHTML += '<div class="panel-body" id="window_body" style="padding: 5px;">'
 	+ '<form onsubmit="return false;" role="form"><div class="form-group"><input class="form-control" type="search" size="25" maxlength="25" id="fwtext"'
 	+ ' onchange="resettext();" placeholder="Enter text to Search"></div>'
-	+ '<input class="btn btn-primary form-control" type="button" value="Find Prev" onclick="findprev();">'
+	+ '<input class="btn btn-primary form-control" type="button" value="Find Prev" onclick="findprev();"><br>'
 	+ '<input class="btn btn-primary form-control" id="btn" type="button" value="Find Next" onclick="this.blur(); findit();">' // ver 5.3 - 5/15/2015 - added this.blur();
 	+ ' <span id="find_msg"><br /></span>'
 	+ '</form></div>\n';
