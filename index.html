@@ -73,10 +73,10 @@ $.ajax({
         
 
     });
-    	if (results == "<button class='btn btn-lg btn-danger' id='clear'>Clear Search</div>"){
-  return false;
-} else {
+    	if (results !== null){
   return true;
+} else {
+  return false;
 }
   },
   
