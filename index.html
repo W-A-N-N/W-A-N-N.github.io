@@ -48,7 +48,7 @@ $.ajax({
       var idStem = $(this).attr("id");
           var header = $(this).find("header").text();
           $(this).find("story").each(function(){
-            var searchId = $(this).attr("id");
+            var storyId = $(this).attr("id");
             var title = $(this).find("title").text();
             var desc = $(this).find("desc p").html();
             var clean_term = new RegExp(term, "i");
