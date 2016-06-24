@@ -3,15 +3,15 @@
 	
 	<item no="5">
 		<header>Weekly WA: 22nd June</header>
-		<story>
+		<story id="5-1">
 			<title>WANN! The future!</title>
 			<desc><p>This bieng our 1st month as WANN; We just wanted to say THANK YOU! to Bossa and the players who read this site and will read this site. We want to become the No.1 source for in-game news, events and battles! We also have some tantalisingly good features coming up, eg. A mailto so you never miss a update; an Alliance codex! as well as some other stuff. Thanks again to all the players as we continue on this path to the WA release!</p></desc>
 		</story>
-		<story>
+		<story id="5-2">
 			<title>Forum Watch:</title>
 			<desc><p>This week our favourite forum post is: The <a href="https://www.worldsadrift.com/fourms/topic/schematic-limit-rebalance-suggestion/">Schematic Limit Rebalance Suggestion</a>! Which discusses the way in-game ship schematics work!</p></desc>
 		</story>
-		<story>
+		<story id="5-3">
 			<title>Alliance Watch:</title>
 			<desc><p>This weeks Piratin' alliance is "the Dread Pirates : Gold, Gore, and Glory" we wont mention the misplaced comma before the "and" in case they come and pillage our HQ! These pirates aren't your normal Pirates, no. They strike fear into the hearts of the Top Dogs on the ranking! Taking on: RageQuit, Sky Drifters and the powerhouse Sky Armada!</p></desc>
 		</story>
@@ -19,25 +19,25 @@
 	
 	<item no="4">
 		<header>Weekly WA: 15th June</header>
-		<story>
+		<story id="4-1">
 			<title>GAME UPDATE!</title>
 			<desc>
 				<p>The blog this week gives us an insight into the modular mechanics in Worlds Adrift! <a href="https://www.worldsadrift.com/blog/modular-mechanics/">Look here!</a> As well as showing us some amazing designs of the cannons, wings and engines to put on our Sky Ships.</p>
 			</desc>
 		</story>
-		<story>
+		<story id="4-2">
 			<title>Feature Spotlight!</title>
 			<desc>
 				<p>For those players who missed it, this weeks favourite feature is: Player Spawning! Bossa said <a href="https://www.worldsadrift.com/forums/topic/spawn-points/#post-3301">here</a> that players will be spawned in regions deemed 'safe' from other players. Though it is good to note that this system won't be perfect and might end up in early game skirmishes.</p>
 			</desc>
 		</story>
-		<story>
+		<story id="4-3">
 			<title>Forum Watch:</title>
 			<desc>
 				<p>Check out the <a href="https://www.worldsadrift.com/forums/topic/discord-server-for-worlds-adrift/">Discord Server</a> to chat about the game with other like-minded people on Discord!</p>
 			</desc>
 		</story>
-		<story>
+		<storyid="4-4">
 			<title>Alliance Watch:</title>
 			<desc>
 				<p>This weeks alliance is: <a href="https://www.worldsadrift.com/alliances/ryder/">Ryder</a>,  who are a loose coalition of ships with a Chaotic Neutral alignment, Watch out!</p>
@@ -47,7 +47,7 @@
   
   <item no="3">
 	<header>Weekly WA: 8th June</header>
-	<story>
+	<story id="3-1">
 	<title>Grammar drama: Part 2</title>
 	<desc>
 		<p>
@@ -55,7 +55,7 @@
 	</p>
 	</desc>
 	</story>
-	<story>
+	<story id="3-2">
 	<title>Alliance Watch</title>
 	<desc>
 		<p>
@@ -64,7 +64,7 @@
 	</p>
 	</desc>
 	</story>
-	<story>
+	<story id="3-3">
 	<title>Forum Watch</title>
 	<desc>
 		<p>
@@ -77,7 +77,7 @@
 
 <item no="2" for="everyone">
   <header>Weekly WA: 1st June</header>
-  <story>
+  <story id="2-1">
     <title>Grammar Drama</title>
   <desc>
   	<p>
@@ -85,7 +85,7 @@
   </p>
   </desc>
   </story>
-  <story>
+  <story id="2-2">
     <title>Forum Watch</title>
     <desc>
     	<p>
@@ -97,7 +97,7 @@
 
 <item no="1" for="everyone">
   <header>LIVE!</header>
-  <story>
+  <story  id="1-1">
   <title>GOOOOOD MOOOORNIIING WOOOORLDS AAADRIFT</title>
   <desc><p>  We've gone live!! From fleet v fleet battles to a Propaganda war, we've got you covered, no more shall the players be in the dark, welcome to the light!</p></desc>
   </story>
