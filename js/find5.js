@@ -648,12 +648,8 @@ function create_div(dleft, dtop, dwidth, dheight)
 	// This part creates the title bar
 	findwindow.innerHTML = '<div class="panel-heading" style="text-align: center'
 	+ ';cursor: move'  // turn mouse arrow to move icon
-	+ ';color: ' + find_title_color
-	+ ';border: 1px solid ' + find_text_color
-	+ ';background-color: ' + find_window_border
-	+ ';float: left' 
 	+ ';" onmouseover="over=1;" onmouseout="over=0;">'
-	+ 'Search WANN <div class="close" onclick="hide();" style="background-color: red;">&times</div></div><br>';
+	+ 'Search WANN <div class="close" onclick="hide();" style="color: white;">&times</div></div><br>';
 	// This part creates the closing X
 
 // This part creates the instructions and the "find" button
