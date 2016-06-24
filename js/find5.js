@@ -653,7 +653,7 @@ function create_div(dleft, dtop, dwidth, dheight)
 	+ ';background-color: ' + find_window_border
 	+ ';float: left' 
 	+ ';" onmouseover="over=1;" onmouseout="over=0;">'
-	+ 'Search WANN</div>';
+	+ 'Search WANN</div><br>';
 	// This part creates the closing X
 	findwindow.innerHTML += '<div onclick="hide();" class="close" style="text-align: center'
 	+ ';width: ' + (16) + 'px'
@@ -669,8 +669,8 @@ function create_div(dleft, dtop, dwidth, dheight)
 	findwindow.innerHTML += '<div class="panel-body" id="window_body" style="padding: 5px;">'
 	+ '<form onsubmit="return false;" role="form"><div class="form-group"><input class="form-control" type="search" size="25" maxlength="25" id="fwtext"'
 	+ ' onchange="resettext();" placeholder="Enter text to Search"></div>'
-	+ '<div class="form-group"><input class="btn btn-primary form-control" type="button" value="Find Prev" onclick="findprev();">'
-	+ '<input class="btn btn-primary form-control" id="btn" type="button" value="Find Next" onclick="this.blur(); findit();"></div>' // ver 5.3 - 5/15/2015 - added this.blur();
+	+ '<input class="btn btn-primary form-control" type="button" value="Find Prev" onclick="findprev();">'
+	+ '<input class="btn btn-primary form-control" id="btn" type="button" value="Find Next" onclick="this.blur(); findit();">' // ver 5.3 - 5/15/2015 - added this.blur();
 	+ ' <span id="find_msg"><br /></span>'
 	+ '</form></div>\n';
 	// ^ ver 5.1 - 10/17/2014
