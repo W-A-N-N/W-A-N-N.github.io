@@ -35,7 +35,7 @@ var find_text_color = "black"; // the color of the text in window
 var find_title_color = "white"; // color of window title text
 var find_window_width = 245; // width of window
 var find_window_height = 185; // height of window
-var find_root_node = null; // Leave as null to search entire doc or put id of div to search (ex: 'content'). Ver 5.0a - 7/18/2014
+var find_root_node = 'feed'; // Leave as null to search entire doc or put id of div to search (ex: 'content'). Ver 5.0a - 7/18/2014
 /* Do not edit the variables below this line */
 
 // Simple drag object to hold all the variables for dragging
@@ -755,7 +755,7 @@ function selectElementContents(el)
 
 // This part creates a visible button on the HTML page to
 // where the script is pasted in the HTML code
-document.write('<input class="btn btn-default navbar-btn" type="button" value="Search WANN..."'
+document.write('<input class="btn btn-default navbar-btn" type="button" value="Search WANN News..."'
 	+ ' onclick="show();">');
 	
 // Create the DIV
