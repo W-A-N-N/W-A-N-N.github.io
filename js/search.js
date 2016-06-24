@@ -59,5 +59,4 @@ function search(term){
  		var turn = search(clean);
  	}
  	event.preventDefault();
- });
 
