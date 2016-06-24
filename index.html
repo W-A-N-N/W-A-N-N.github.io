@@ -24,38 +24,31 @@
     <![endif]-->
     
         <script src="js/jquery.js"></script>
-     
- 
- <script>
+     	<script src="js/search.js"></script>
+	<script>
+		$(document).ready(function(){
+ 		
+ 			function getUrlVars() {
+				var vars = {};
+				var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+				});
+				return vars;
+			}
+ 			var term = String(getUrlVars()["search"]);
+ 			var clean = term.replace(/\+/g," ");
+ 			if(clean !== null){
+ 			var turn = search(clean);
+ 			}
+ 				event.preventDefault();
+ 			});
+	</script>
 
-	
- 	
- </script>
 </head>
 
 <body>
 
-<script>
-     	function getUrlVars() {
-		var vars = {};
-		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-		vars[key] = value;
 
-	});
-		return vars;
-	}
-
-	$(document).ready(function(){
- 		
- 		var term = String(getUrlVars()["search"]);
- 		var clean = term.replace(/\+/g," ");
- 		if(clean !== null){
- 		var turn = search(clean);
- 		}
- 		event.preventDefault();
- 	
-	});
-</script>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
         <div class="container">
