@@ -1,5 +1,3 @@
-		
-		
 function search(term){
 	 $.ajax({ 
    url: "newsfeed.xml", 
@@ -42,10 +40,12 @@ function search(term){
 	});
 	return vars;
 	};
-	
-var term = String(getUrlVars()["search"]);
-var clean = term.replace(/\+/g," ");
-if(clean !== null){
- 	var turn = search(clean);
-};
+
+$(document).ready(function(){
+	var term = String(getUrlVars()["search"]);
+	var clean = term.replace(/\+/g," ");
+	if(clean !== null){
+ 		var turn = search(clean);
+	};
+});
 
