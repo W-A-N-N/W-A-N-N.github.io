@@ -39,6 +39,9 @@
         	h3.badges {
     			line-height:200%;
 		}
+		a {
+			text-decoration: none
+		}
         </style>
         <script>
         $(document).ready(function(){
@@ -99,15 +102,15 @@
      					$("#all-tab").append("<div role='tabpanel' class='tab-pane fade' id='"+leader+"'><div class='panel panel-"+color+"' id='"+name+"'><div class='panel-heading'><h3><strong>"+name+"</strong> <em>Founder:</em> <strong>"+leader+"</strong> <em>Reputation:</em> <strong>["+rep+"]</strong></h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div><div class='panel-footer'><em><strong>"+members+"</strong> members</em></div></div></div>");
 					$(this).find("ally").each(function(){
      						var id = $(this).attr("id");
-     						$("#body-"+leader).append("<span class='label label-success'>"+id+"</span> ");
+     						$("#body-"+leader).append("<a href='#"+id+"' data-toggle='pill'><span class='label label-success'>"+id+"</span></a> ");
      					});
 					$(this).find("neutral").each(function(){
        						var id = $(this).attr("id");
-       						$("#body-"+leader).append("<span class='label label-primary'>"+id+"</span> ");
+       						$("#body-"+leader).append("<a href='#"+id+"' data-toggle='pill'><span class='label label-primary'>"+id+"</span></a> ");
      					});
      					$(this).find("enemy").each(function(){
      						var id = $(this).attr("id");
-     						$("#body-"+leader).append("<span class='label label-danger'>"+id+"</span> ");
+     						$("#body-"+leader).append("<a href='#"+id+"' data-toggle='pill'><span class='label label-danger'>"+id+"</span></a> ");
      					});
     				});
   			},
