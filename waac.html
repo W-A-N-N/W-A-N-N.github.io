@@ -80,7 +80,7 @@
      							color = "default";
      					}
      					
-     					$("#all-btn").append("<label class='btn btn-md btn-"+color+"'><input type='radio' name='options' data-toggle='pill' id='none' autocomplete='off'>"+name+"</label>")
+     					$("#all-btn").append("<li role='presentation'><a href='#"+name+"' aria-controls='"+leader+"' role='pill' data-toggle='pill'>"+name+"</a></li>")
 
      					$("#all-tab").append("<div role='tabpanel' class='tab-pane' id='"+leader+"'><div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h3><strong>"+name+"</strong> ["+rep+"] "+leader+"</h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div></div></div>");
 					$(this).find("ally").each(function(){
@@ -163,17 +163,12 @@
                 <br>
                 <div class="well">
                 	<h2>Navigation:</h2>
-                <div class="btn-group" id="all-btn">
-  		<label class="btn btn-info btn-md active">
-    			<input type="radio" name="options" data-toggle="pill" id="legend" autocomplete="off" checked> Legend
-  		</label>
-  		<label class="btn btn-info btn-md">
-    			<input type="radio" name="options" data-toggle="pill" id="all" autocomplete="off"> ALL 
-  		</label>
-  		<label class="btn btn-info btn-md">
-    			<input type="radio" name="options" data-toggle="pill" id="none" autocomplete="off"> NONE
-  		</label>
-		</div>
+                <ul class="nav nav-pills" id="all-btn" role="tablist">
+    <li role="presentation" class="active"><a href="#legend" aria-controls="legend" role="pill" data-toggle="pill">Legend</a></li>
+    <li role="presentation"><a href="#all" aria-controls="all" role="pill" data-toggle="pill">ALL</a></li>
+    <li role="presentation"><a href="#none" aria-controls="none" role="pill" data-toggle="pill">NONE</a></li>
+  		</ul>
+
             </div>
 			</div>
 			<div class="col-md-6 col-sm-12">
