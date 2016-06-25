@@ -1,10 +1,11 @@
+
 $.ajax({
   url: "alliances.xml",
   datatype: "xml",
   
   success: function(data){
     $(data).find("alliances alliance").each(function(){
-     var rep = $(this).attr("rep").value();
+     var rep = $(this).attr("rep");
      var local = $(this).attr("based");
      var name = $(this).find("name").text();
      var leader = $(this).find("leader").text();
