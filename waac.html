@@ -51,6 +51,59 @@
         </style>
         <script>
         
+        function getLink(type, id){
+        	if(type == "inter"){
+        		switch(id){
+        			case "The Sky Drifters":
+        				return "Day0x";
+        			case "Blacklance":
+        				return "Ryulord";
+        			case "Traders Of the Foundation":
+        				return "BobioTheHobo";
+        			case "RageQuit":
+        				return "TimSoulSurfer";
+        			case "The Anchors of Hummanity":
+        				return "MeisterKeen";
+        			case "The Spiders Nest":
+        				return "TheRecluse";
+        			case "Enkidu":
+        				return "Enin";
+        			case "Oblitus Est Spes":
+        				return "JPB"
+        			case "The Core Techs":
+        				return "ThirtiethElement";
+        			case "The Library":
+        				return "Clingbeetle";
+        			default:
+        				return "404";
+        		};
+        	} else if(type = "external") {
+        		switch(id){
+        		        case "The Sky Drifters":
+        				return "https://www.worldsadrift.com/alliances/sky-drifters/";
+        			case "Blacklance":
+        				return "https://www.worldsadrift.com/alliances/blackance/";
+        			case "Traders Of the Foundation":
+        				return "https://www.worldsadrift.com/alliances/traders-of-the-foundation/";
+        			case "RageQuit":
+        				return "https://www.worldsadrift.com/alliances/ragequit/";
+        			case "The Anchors of Hummanity":
+        				return "https://www.worldsadrift.com/alliances/the-harbormen/";
+        			case "The Spiders Nest":
+        				return "https://www.worldsadrift.com/alliances/the-spiders-nest/";
+        			case "Enkidu":
+        				return "https://www.worldsadrift.com/alliances/enkidu/";
+        			case "Oblitus Est Spes":
+        				return "https://www.worldsadrift.com/alliances/oblitus-est-spes/"
+        			case "The Core Techs":
+        				return "#404";
+        			case "The Library":
+        				return "https://www.worldsadrift.com/alliances/the-library/";
+        			default:
+        				return "#404";
+        		};
+        	};
+        }
 
         
         $(document).ready(function(){
@@ -59,20 +112,6 @@
   		dataType: "xml",
   
   		success: function(data){
-  			
-  			        function searchFor(term){
-        					var id = null;
-  						$(data).find("alliancelist alliance").each(function(){
-  							var name = $(this).find("name").text();
-  							if(name === term){
-  								id = $(this).find("leader").text();
-  								return id;
-  							};
-  						});
-  						if(id == null){
-  							return "404";
-  						}
-        			};
         			
     				$(data).find("alliancelist alliance").each(function(){
      					var rep = $(this).attr("rep");
@@ -124,20 +163,20 @@
      					
      					$("#all-btn").append("<li role='presentation'><a href='#"+leader+"' aria-controls='"+leader+"' role='pill' data-toggle='pill'>"+name+"</a></li>")
 
-     					$("#all-tab").append("<div role='tabpanel' class='tab-pane fade' id='"+leader+"'><div class='panel panel-"+color+"' id='"+name+"'><div class='panel-heading'><h3><a href='https://www.worldsadrift.com/alliances/"+cleanname+"'><strong>"+name+"</strong></a> <em>Founder:</em> <strong>"+leader+"</strong> <em>Reputation:</em> <strong>["+rep+"]</strong></h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div><div class='panel-footer'><em><strong>"+members+"</strong> members</em></div></div></div>");
+     					$("#all-tab").append("<div role='tabpanel' class='tab-pane fade' id='"+leader+"'><div class='panel panel-"+color+"' id='"+name+"'><div class='panel-heading'><h3><a href='"+getLink("external", name)+"'><strong>"+name+"</strong></a> <em>Founder:</em> <strong>"+leader+"</strong> <em>Reputation:</em> <strong>["+rep+"]</strong></h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div><div class='panel-footer'><em><strong>"+members+"</strong> members</em></div></div></div>");
 					$(this).find("ally").each(function(){
      						var id = $(this).attr("id");
-     						var linkid = searchFor(id);
+     						var linkid = getLink("inter", id);
      						$("#body-"+leader).append("<a href='#"+linkid+"' data-toggle='pill'><span class='label label-success'>"+id+"</span></a> ");
      					});
 					$(this).find("neutral").each(function(){
        						var id = $(this).attr("id");
-       						var linkid = searchFor(id);
+       						var linkid = getLink("inter", id);
        						$("#body-"+leader).append("<a href='#"+linkid+"' data-toggle='pill'><span class='label label-primary'>"+id+"</span></a> ");
      					});
      					$(this).find("enemy").each(function(){
      						var id = $(this).attr("id");
-     						var linkid = searchFor(id);
+     						var linkid = getLink("inter", id);
      						$("#body-"+leader).append("<a href='#"+linkid+"' data-toggle='pill'><span class='label label-danger'>"+id+"</span></a> ");
      					});
     				});
@@ -244,6 +283,9 @@
     						<div role="tabpanel" class="tab-pane fade well" id="none">
     							<h1>NONE</h1>
     							<p>If this is mentioned by the Alliance it means they have not assigned any alliance to that status yet.</p>
+    							</div>
+    							<div role="tabpanel" class="tab-pane fade well" id="404">
+    								<h1>Looks like this alliance isn't on the codex, perhaps you could suggest to thier leader to add it?</h1>
     							</div>
   					</div>
 			</div>
