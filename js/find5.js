@@ -643,7 +643,7 @@ function create_div(dleft, dtop, dwidth, dheight)
 	findwindow.style.zIndex = 2000;
 	findwindow.style.fontSize = '14px';
 	findwindow.style.overflowX = 'hidden';
-	//findwindow.style.display = "block";
+	findwindow.style.display = "fixed";
 	
 	// This part creates the title bar
 	findwindow.innerHTML = '<div class="panel-heading" style="text-align: center'
