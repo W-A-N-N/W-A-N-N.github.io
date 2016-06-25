@@ -1,6 +1,5 @@
 $.ajax({
   url: "waac.xml",
-  dataType: "xml",
   
   success: function(data){
     $(data).find("alliances alliance").each(function(){
