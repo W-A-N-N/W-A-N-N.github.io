@@ -17,6 +17,10 @@ $.ajax({
      } else if(3 >= rep > 0){
        var color = "success"
      }
-     $(".list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h3>"+name+"</h3><p>"+leader+"</p></div></div> ")
-    }
-  }
+     $(".list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h3>"+name+"</h3><p>"+leader+"</p></div><div class='panel-body' id='body-"+leader+"'></div></div> ")
+     $(this).find("neutral").each(function(){
+       var id = $(this).attr("id");
+       $("#body-"+leader).append("<h2><span class='label label-primary'>"+id+"</span></h2>")
+     });
+    };
+  },
