@@ -82,7 +82,7 @@
      					
      					$("#all-btn").append("<li role='presentation'><a href='#"+name+"' aria-controls='"+leader+"' role='pill' data-toggle='pill'>"+name+"</a></li>")
 
-     					$("#all-tab").append("<div role='tabpanel' class='tab-pane fade' id='"+leader+"'><div class='panel panel-"+color+"' id='"+name+"'><div class='panel-heading'><h3><strong>"+name+"</strong> ["+rep+"] "+leader+"</h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div></div></div>");
+     					$("#all-tab").append("<div role='tabpanel' class='tab-pane fade' id='"+name+"'><div class='panel panel-"+color+"' id='"+name+"'><div class='panel-heading'><h3><strong>"+name+"</strong> ["+rep+"] "+leader+"</h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div></div></div>");
 					$(this).find("ally").each(function(){
      						var id = $(this).attr("id");
      						$("#body-"+leader).append("<span class='label label-success'>"+id+"</span> ");
