@@ -4,6 +4,7 @@
 		<name>The Sky Drifters</name>
 		<leader>Day0x</leader>
 		<relations>
+			<neutral id="ALL" />
 			<neutral id="RageQuit" />
 			<neutral id="Dread Pirates" />
 			<ally id="Blacklance" />
@@ -22,6 +23,7 @@
 		<name>Blacklance</name>
 		<leader>Ryulord</leader>
 		<relations>
+			<neutral id="ALL" />
 			<neutral id="RageQuit" />
 			<neutral id="Dread Pirates" />
 			<neutral id="The Core Techs" />
@@ -111,7 +113,7 @@
 		<name>The Library</name>
 		<leader>Clingbeetle</leader>
 		<relations>
-			<neutral id="ALLL" />
+			<neutral id="ALL" />
 			<ally id="Core Techs" />
 			<ally id="Enkidu" />
 			<ally id="The Spiders Nest" />
