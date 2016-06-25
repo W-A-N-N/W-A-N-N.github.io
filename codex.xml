@@ -77,7 +77,7 @@
 	</alliance>
 	<alliance rep="3" based="EU">
 		<name>Enkidu</name>
-		<leader>Enin</name>
+		<leader>Enin</leader>
 		<relations>
 			<neutral id="ALL" />
 			<ally id="Traders Of the Foundation" />
