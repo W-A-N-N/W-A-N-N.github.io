@@ -51,29 +51,7 @@
         </style>
         <script>
         
-        function searchFor(term){
-        	var id = null;
-        			$.ajax({
-  					url: "codex.xml",
-  					dataType: "xml",
-  
-  					success: function(data){
-  						$(data).find("alliancelist alliance").each(function(){
-  							var name = $(this).find("name").text();
-  							if(name === term){
-  								id = $(this).find("leader").text();
-  								return id;
-  							};
-  						});
-  
-  					},
-  					
-  					error: function(data){
-  						alert("Error with the search, seriously. WHY DOES THIS HAPPEN!")
-  						return false;
-  					}
-        });
-        };
+
         
         $(document).ready(function(){
         	$.ajax({
@@ -81,6 +59,22 @@
   		dataType: "xml",
   
   		success: function(data){
+  			
+  			        function searchFor(term){
+        					var id = null;
+  						$(data).find("alliancelist alliance").each(function(){
+  							var name = $(this).find("name").text();
+  							if(name === term){
+  								id = $(this).find("leader").text();
+  								return id;
+  							};
+  						});
+  						if(id == null){
+  							return "404";
+  						}
+  					},
+  					
+        			};
     				$(data).find("alliancelist alliance").each(function(){
      					var rep = $(this).attr("rep");
      					var local = $(this).attr("based");
