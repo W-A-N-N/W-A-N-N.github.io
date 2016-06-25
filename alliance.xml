@@ -12,4 +12,17 @@
       The Glorious Sky Armada
     </enemy>
   </al>
+  <al rep="5">
+    <faction based="US">Blacklance</faction>
+    <founder>Ryulord</founder>
+    <ally>
+      The Sky Drifters, The Traders of the Foundation, The Anchors of Humanity
+    </ally>
+    <neutral>
+      RageQuit, The Dread Pirates, The Core Techs
+    </neutral>
+    <enemy>
+      The Glorious Sky Armada
+    </enemy>
+  </al>
 </list>
