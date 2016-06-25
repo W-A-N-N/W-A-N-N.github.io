@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<alliances>
+<alliancelist version="beta">
 	<alliance rep="2" based="EU"> 
 		<name>The Sky Drifters</name>
 		<leader>Day0x</leader>
 		<relations>
-			<neutral id="RageQuit"></neutral>
-			<neutral id="Dread Pirates"></neutral>
-			<ally id="Blacklance"></ally>
-			<ally id="Ryders"></ally>
-			<ally id="Sky Lanes Travel Collective"></ally>
-			<ally id="Tempest Trade Fleet"></ally>
-			<ally id="WANMED"></ally>
-			<ally id="Pegasus"></ally>
-			<ally id="Traders Of the Foundation"></ally>
-			<ally id="The Spiders Nest"></ally>
-			<ally id="The Anchors Of Hummanity"></ally>
-			<enemy id="The Sky Armada"></enemy>
+			<neutral id="RageQuit" />
+			<neutral id="Dread Pirates" />
+			<ally id="Blacklance" />
+			<ally id="Ryders" />
+			<ally id="Sky Lanes Travel Collective" />
+			<ally id="Tempest Trade Fleet" />
+			<ally id="WANMED" />
+			<ally id="Pegasus" />
+			<ally id="Traders Of the Foundation" />
+			<ally id="The Spiders Nest" />
+			<ally id="The Anchors Of Hummanity" />
+			<enemy id="The Sky Armada" />
 		</relations>
 	</alliance>
 	<alliance rep="5" based="US">
 		<name>Blacklance</name>
 		<leader>Ryulord</leader>
 		<relations>
-			<neutral id="RageQuit"></neutral>
-			<neutral id="Dread Pirates"></neutral>
-			<neutral id="The Core Techs"></neutral>
-			<ally id="Sky Drifters"></ally>
-			<ally id="Traders Of the Foundation"></ally>
-			<ally id="The Anchors Of Hummanity"></ally>
-			<enemy id="The Sky Armada"></enemy>
+			<neutral id="RageQuit" />
+			<neutral id="Dread Pirates" />
+			<neutral id="The Core Techs" />
+			<ally id="Sky Drifters" />
+			<ally id="Traders Of the Foundation" />
+			<ally id="The Anchors Of Hummanity" />
+			<enemy id="The Sky Armada" />
 		</relations>
 	</alliance>
 	<alliance rep="2" based="US">
 		<name>Traders Of the Foundation</name>
 		<leader>BobioTheHobo</leader>
 		<relations>
-			<neutral id="ALL"></neutral>
-			<ally id="Blacklance"></ally>
-			<ally id="Sky Drifters"></ally>
-			<ally id="Enkidu"></ally>
-			<enemy id="NONE"></enemy>
+			<neutral id="ALL" />
+			<ally id="Blacklance" />
+			<ally id="Sky Drifters" />
+			<ally id="Enkidu" />
+			<enemy id="NONE" />
 		</relations>
 	</alliance>
 	<alliance rep="?" based="US">
 		<name>RageQuit</name>
 		<leader>TimSoulSurfer</leader>
 		<relations>
-			<neutral id="ALL"></neutral>
-			<ally id="NONE"></ally>
-			<enemy id="NONE"></enemy>
+			<neutral id="ALL" />
+			<ally id="NONE" />
+			<enemy id="NONE" />
 		</relations>
 	</alliance>
 	<alliance rep="4" based="GL">
 		<name>The Anchors Of Hummanity</name>
 		<leader>MeisterKeen</leader>
 		<relations>
-			<neutral id="ALL"></neutral>
-			<ally id="Sky Drifters"></ally>
-			<ally id="ARK"></ally>
-			<ally id="Blacklance"></ally>
-			<ally id="Enkidu"></ally>
-			<ally id="The Spiders Nest"></ally>
-			<enemy id="NONE"></enemy>
+			<neutral id="ALL" />
+			<ally id="Sky Drifters" />
+			<ally id="ARK" />
+			<ally id="Blacklance" />
+			<ally id="Enkidu" />
+			<ally id="The Spiders Nest" />
+			<enemy id="NONE" />
 		</relations>
 	</alliance>
 	<alliance rep="5" based="EU">
 		<name>The Spiders Nest</name>
 		<leader>TheRecluse</leader>
 		<relations>
-			<neutral id="ALL"></neutral>
-			<ally id="Sky Drifters"></ally>
-			<ally id="The Library"></ally>
-			<ally id="The Anchors Of Hummanity"></ally>
-			<enemy id="NONE"></enemy>
+			<neutral id="ALL" />
+			<ally id="Sky Drifters" />
+			<ally id="The Library" />
+			<ally id="The Anchors Of Hummanity" />
+			<enemy id="NONE" />
 		</relations>
 	</alliance>
 	<alliance rep="3" based="EU">
 		<name>Enkidu</name>
 		<leader>Enin</name>
 		<relations>
-			<neutral id="ALL"></neutral>
-			<ally id="Traders Of the Foundation"></ally>
-			<ally id="Sky Drifters"></ally>
-			<ally id="The Anchors Of Hummanity"></ally>
-			<ally id="The Library"></ally>
-			<ally id="The Core Techs"></ally>
-			<enemy id="NONE"></enemy>
+			<neutral id="ALL" />
+			<ally id="Traders Of the Foundation" />
+			<ally id="Sky Drifters" />
+			<ally id="The Anchors Of Hummanity" />
+			<ally id="The Library" />
+			<ally id="The Core Techs" />
+			<enemy id="NONE" />
 		</relations>
 	</alliance>
 	<alliance rep="5" based="US">
 		<name>Oblitus Est Spes</name>
 		<leader>J.P.B</leader>
 		<relations>
-			<neutral id="ALL"></neutral>
-			<ally id="NONE"></ally>
-			<enemy id="NONE"></enemy>
+			<neutral id="ALL" />
+			<ally id="NONE" />
+			<enemy id="NONE" />
 		</relations>
 	</alliance>
 	<alliance rep="7" based="GL">
 		<name>Core Techs</name>
 		<leader>ThirtiethElement</leader>
 		<relations>
-			<neutral id="ALL"></neutral>
-			<ally id="Enkidu"></ally>
-			<ally id="The Library"></ally>
-			<enemy id="NONE"></enemy>
+			<neutral id="ALL" />
+			<ally id="Enkidu" />
+			<ally id="The Library" />
+			<enemy id="NONE" />
 		</relations>
 	</alliance>
 	<alliance rep="1" based="GL">
 		<name>The Library</name>
 		<leader>Clingbeetle</leader>
 		<relations>
-			<neutral id="ALLL"></neutral>
-			<ally id="Core Techs"></ally>
-			<ally id="Enkidu"></ally>
-			<ally id="The Spiders Nest"></ally>
-			<ally id="Bushidō"></ally>
-			<enemy id="NONE"></enemy>
+			<neutral id="ALLL" />
+			<ally id="Core Techs" />
+			<ally id="Enkidu" />
+			<ally id="The Spiders Nest" />
+			<ally id="Bushidō" />
+			<enemy id="NONE" />
 		</relations>
 	</alliance>
-</alliances>
+</alliancelist>
