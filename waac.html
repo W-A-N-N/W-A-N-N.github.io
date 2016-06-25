@@ -50,6 +50,35 @@
 		}
         </style>
         <script>
+        
+        function searchFor(term){
+        			$.ajax({
+  					url: "codex.xml",
+  					dataType: "xml",
+  
+  					success: function(data){
+  						$(data).find("alliancelist alliance").each(function(){
+  							var name = $(this).find("name").text();
+  							if(name === term){
+  								var id = $(this).find("leader").text();
+  								
+  							};
+  						});
+  						if(id === null){
+  							return "No Such Thing"
+  						}
+  						else{
+  							return id;							
+  						}
+  
+  					},
+  					
+  					error: function(data){
+  						alert("Error with the search, seriously. WHY DOES THIS HAPPEN!")
+  						return false;
+  					}
+        };
+        
         $(document).ready(function(){
         	$.ajax({
   		url: "codex.xml",
@@ -108,15 +137,18 @@
      					$("#all-tab").append("<div role='tabpanel' class='tab-pane fade' id='"+leader+"'><div class='panel panel-"+color+"' id='"+name+"'><div class='panel-heading'><h3><strong>"+name+"</strong> <em>Founder:</em> <strong>"+leader+"</strong> <em>Reputation:</em> <strong>["+rep+"]</strong></h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div><div class='panel-footer'><em><strong>"+members+"</strong> members</em></div></div></div>");
 					$(this).find("ally").each(function(){
      						var id = $(this).attr("id");
-     						$("#body-"+leader).append("<a href='#"+id+"' data-toggle='pill'><span class='label label-success'>"+id+"</span></a> ");
+     						var linkid = searchFor(id);
+     						$("#body-"+leader).append("<a href='#"+linkid+"' data-toggle='pill'><span class='label label-success'>"+id+"</span></a> ");
      					});
 					$(this).find("neutral").each(function(){
        						var id = $(this).attr("id");
-       						$("#body-"+leader).append("<a href='#"+id+"' data-toggle='pill'><span class='label label-primary'>"+id+"</span></a> ");
+       						var linkid = searchFor(id);
+       						$("#body-"+leader).append("<a href='#"+linkid+"' data-toggle='pill'><span class='label label-primary'>"+id+"</span></a> ");
      					});
      					$(this).find("enemy").each(function(){
      						var id = $(this).attr("id");
-     						$("#body-"+leader).append("<a href='#"+id+"' data-toggle='pill'><span class='label label-danger'>"+id+"</span></a> ");
+     						var linkid = searchFor(id);
+     						$("#body-"+leader).append("<a href='#"+linkid+"' data-toggle='pill'><span class='label label-danger'>"+id+"</span></a> ");
      					});
     				});
   			},
