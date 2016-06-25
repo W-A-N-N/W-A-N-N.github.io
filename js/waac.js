@@ -22,5 +22,9 @@ $.ajax({
        var id = $(this).attr("id");
        $("#body-"+leader).append("<h2><span class='label label-primary'>"+id+"</span></h2>")
      });
-    };
+    });
   },
+  
+  error: function(data){
+    alert("Error fetching feed! If this persists please leave an issue on the Github repo")
+  }
