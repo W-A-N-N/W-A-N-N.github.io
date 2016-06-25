@@ -52,6 +52,7 @@
         <script>
         
         function searchFor(term){
+        	var id = null;
         			$.ajax({
   					url: "codex.xml",
   					dataType: "xml",
@@ -60,7 +61,7 @@
   						$(data).find("alliancelist alliance").each(function(){
   							var name = $(this).find("name").text();
   							if(name === term){
-  								var id = $(this).find("leader").text();
+  								id = $(this).find("leader").text();
   								
   							};
   						});
