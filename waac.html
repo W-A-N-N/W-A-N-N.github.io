@@ -38,27 +38,56 @@
      					var name = $(this).find("name").text();
      					var leader = $(this).find("leader").text();
      					var color = "default";
-     					if(7 >= rep > 5){
-       						color = "warning";
-     					} else if(10 >= rep > 7){
-       						color = "danger";
-     					} else if(5 >= rep > 3){
-       						color = "info";
-     					} else if(3 >= rep > 0){
-       						color = "success";
+     					switch(rep) {
+     						case 1:
+     							color = "success";
+     							break;
+     						case 2:
+     							color = "success";
+     							break;
+     						case 3:
+     							color = "success";
+     							break;
+     						case 4:
+     							color = "primary";
+     							break;
+     						case 5:
+     							color = "primary";
+     							break;	
+     						case 6:
+     							color = "primary";
+     							break;	
+     						case 7:
+     							color = "warning";
+     							break;	
+     						case 8:
+     							color = "warning";
+     							break;		
+     						case 9:
+     							color = "warning";
+     							break;		
+     						case 10:
+     							color = "danger";
+     							break;		
+     						case '?':
+     							color = "danger";
+     							break;
+     						default:
+     							color = "default";
      					}
+
      					$("#list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h4><strong>"+name+"</strong> ["+rep+"] "+leader+"</h4></div><div class='panel-body'><h3 id='body-"+leader+"'></h3></div></div> ");
 					$(this).find("neutral").each(function(){
        						var id = $(this).attr("id");
-       						$("#body-"+leader).append("<span class='label label-primary'>"+id+"</span> ");
+       						$("#body-"+leader).append("<span class='label label-primary'>"+id+"</span>&nbsp");
      					});
      					$(this).find("ally").each(function(){
      						var id = $(this).attr("id");
-     						$("#body-"+leader).append("<span class='label label-success'>"+id+"</span> ");
+     						$("#body-"+leader).append("<span class='label label-success'>"+id+"</span>&nbsp");
      					});
      					$(this).find("enemy").each(function(){
      						var id = $(this).attr("id");
-     						$("#body-"+leader).append("<span class='label label-danger'>"+id+"</span> ");
+     						$("#body-"+leader).append("<span class='label label-danger'>"+id+"</span>&nbsp");
      					});
     				});
   			},
