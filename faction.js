@@ -1,5 +1,5 @@
 $.ajax({
-  url: "waac.xml",
+  url: "codex.xml",
   dataType: "xml",
   
   success: function(data){
