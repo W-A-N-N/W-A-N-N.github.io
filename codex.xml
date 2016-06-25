@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <alliancelist version="beta">
 	<alliance rep="2" based="EU"> 
-		<name>The Sky Drifters</name>
+		<name>Sky Drifters</name>
 		<leader>Day0x</leader>
 		<relations>
-			<neutral id="ALL" />
 			<neutral id="RageQuit" />
 			<neutral id="Dread Pirates" />
 			<ally id="Blacklance" />
@@ -23,7 +22,6 @@
 		<name>Blacklance</name>
 		<leader>Ryulord</leader>
 		<relations>
-			<neutral id="ALL" />
 			<neutral id="RageQuit" />
 			<neutral id="Dread Pirates" />
 			<neutral id="The Core Techs" />
@@ -100,7 +98,7 @@
 		</relations>
 	</alliance>
 	<alliance rep="7" based="GL">
-		<name>Core Techs</name>
+		<name>The Core Techs</name>
 		<leader>ThirtiethElement</leader>
 		<relations>
 			<neutral id="ALL" />
@@ -113,8 +111,8 @@
 		<name>The Library</name>
 		<leader>Clingbeetle</leader>
 		<relations>
-			<neutral id="ALL" />
-			<ally id="Core Techs" />
+			<neutral id="ALLL" />
+			<ally id="The Core Techs" />
 			<ally id="Enkidu" />
 			<ally id="The Spiders Nest" />
 			<ally id="Bushidō" />
