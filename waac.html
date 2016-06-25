@@ -32,21 +32,22 @@
   		dataType: "xml",
   
   		success: function(data){
-    				$(data).find("alliances alliance").each(function(){
+    				$(data).find("alliancelist alliance").each(function(){
      					var rep = $(this).attr("rep");
      					var local = $(this).attr("based");
      					var name = $(this).find("name").text();
      					var leader = $(this).find("leader").text();
+     					var color = "default";
      					if(7 >= rep > 5){
-       						var color = "warning";
+       						color = "warning";
      					} else if(10 >= rep > 7){
-       						var color = "danger";
+       						color = "danger";
      					} else if(5 >= rep > 3){
-       						var color = "primary";
+       						color = "primary";
      					} else if(3 >= rep > 0){
-       						var color = "success";
+       						color = "success";
      					}
-     					$(".list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h3>"+name+"</h3><p>"+leader+"</p></div><div class='panel-body' id='body-"+leader+"'></div></div> ");
+     					$("#list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h3>"+name+"</h3><p>"+leader+"</p></div><div class='panel-body' id='body-"+leader+"'></div></div> ");
 					$(this).find("neutral").each(function(){
        						var id = $(this).attr("id");
        						$("#body-"+leader).append("<h2><span class='label label-primary'>"+id+"</span></h2>");
@@ -94,7 +95,7 @@
                         <a href="https://www.worldsadrift.com/forums/">Official Forums</a>
                     </li>
                     <li>
-                        <a href="#">Beta Stuff!</a>
+                        <a href="#">WAAC beta</a>
                     </li>
                     <li>
         </li>
@@ -122,7 +123,7 @@
             </div>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<div class="list">
+				<div id="list">
 				
 				</div>
 			</div>
