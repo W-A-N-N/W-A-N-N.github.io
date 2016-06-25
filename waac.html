@@ -79,8 +79,10 @@
      						default:
      							color = "default";
      					}
+     					
+     					$("#all-btn").append("<label class='btn btn-md btn-"+color+"'><input type='radio' name='options' data-toggle='pill' id='none' autocomplete='off'>"+name+"</label>")
 
-     					$("#list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h3><strong>"+name+"</strong> ["+rep+"] "+leader+"</h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div></div> ");
+     					$("#all-tab").append("<div role='tabpanel' class='tab-pane' id='"+leader+"'><div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h3><strong>"+name+"</strong> ["+rep+"] "+leader+"</h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div></div></div>");
 					$(this).find("ally").each(function(){
      						var id = $(this).attr("id");
      						$("#body-"+leader).append("<span class='label label-success'>"+id+"</span> ");
@@ -159,13 +161,28 @@
                 <p>Welcome to the Worlds Adrift Alliance Codex, Powered by WANN!</p>
                 </div>
                 <br>
-                <div class="well">                <h2>Coming Soon:</h2>
-                <p>Asked for by the WA community we, WANN deliver. This codex of the Alliances will be a datasheet full quick data on the many alliance factions in the WA world. Thanks again to everyone in the WA community and in Bossa.</p>
+                <div class="well">
+                	<h2>Navigation:</h2>
+                <div class="btn-group" id="all-btn">
+  		<label class="btn btn-info btn-md active">
+    			<input type="radio" name="options" data-toggle="pill" id="legend" autocomplete="off" checked> Legend
+  		</label>
+  		<label class="btn btn-info btn-md">
+    			<input type="radio" name="options" data-toggle="pill" id="all" autocomplete="off"> ALL 
+  		</label>
+  		<label class="btn btn-info btn-md">
+    			<input type="radio" name="options" data-toggle="pill" id="none" autocomplete="off"> NONE
+  		</label>
+		</div>
             </div>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<div id="list">
-				
+				<div class="well">
+					  <div class="tab-content" id="all-tab">
+    						<div role="tabpanel" class="tab-pane fade in active" id="legend"><h1>Legend:</h1></div>
+    						<div role="tabpanel" class="tab-pane" id="all"><h1>ALL</h1></div>
+    						<div role="tabpanel" class="tab-pane" id="none"><h1>NONE</h1></div>
+  					</div>
 				</div>
 			</div>
         </div>
