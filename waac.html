@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="The Site offering the Low-down on Worlds Adrift Alliances">
+    <meta name="author" content="WANN News">
 
     <title>WAAC :: Live Beta!</title>
 
@@ -40,11 +40,11 @@
      					var color = "default";
      					if(7 >= rep > 5){
        						color = "warning";
-     					} else if(7 < rep <= 10){
+     					} else if(10 >= rep > 7){
        						color = "danger";
-     					} else if(3 < rep <= 5){
-       						color = "primary";
-     					} else if(0 < rep <= 3){
+     					} else if(5 >= rep > 3){
+       						color = "info";
+     					} else if(3 >= rep > 0){
        						color = "success";
      					}
      					$("#list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h4><strong>"+name+"</strong> ["+rep+"] "+leader+"</h4></div><div class='panel-body'><h3 id='body-"+leader+"'></h3></div></div> ");
