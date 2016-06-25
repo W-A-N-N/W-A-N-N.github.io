@@ -76,14 +76,14 @@
      							color = "default";
      					}
 
-     					$("#list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h4><strong>"+name+"</strong> ["+rep+"] "+leader+"</h4></div><div class='panel-body'><h5 id='body-"+leader+"'></h5></div></div> ");
+     					$("#list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h2><strong>"+name+"</strong> ["+rep+"] "+leader+"</h2></div><div class='panel-body'><h4 id='body-"+leader+"'></h4></div></div> ");
+					$(this).find("ally").each(function(){
+     						var id = $(this).attr("id");
+     						$("#body-"+leader).append("<span class='label label-success'>"+id+"</span> ");
+     					});
 					$(this).find("neutral").each(function(){
        						var id = $(this).attr("id");
        						$("#body-"+leader).append("<span class='label label-primary'>"+id+"</span> ");
-     					});
-     					$(this).find("ally").each(function(){
-     						var id = $(this).attr("id");
-     						$("#body-"+leader).append("<span class='label label-success'>"+id+"</span> ");
      					});
      					$(this).find("enemy").each(function(){
      						var id = $(this).attr("id");
