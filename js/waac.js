@@ -1,6 +1,7 @@
 
 $.ajax({
-  url: "waac.xml",
+  type: "GET",
+  url: "/waac.xml",
   dataType: "xml",
   
   success: function(data){
