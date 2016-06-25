@@ -81,7 +81,7 @@
      							color = "default";
      					}
      					
-     					leader = leader.replace(/./g, "-");
+     					leader = leader.replace(/\./g, "");
      					
      					$("#all-btn").append("<li role='presentation'><a href='#"+leader+"' aria-controls='"+leader+"' role='pill' data-toggle='pill'>"+name+"</a></li>")
 
