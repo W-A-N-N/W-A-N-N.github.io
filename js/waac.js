@@ -1,6 +1,6 @@
 
 $.ajax({
-  url: "alliances.xml",
+  url: "waac.xml",
   datatype: "xml",
   
   success: function(data){
