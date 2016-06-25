@@ -42,6 +42,7 @@
      					var name = $(this).find("name").text();
      					var leader = $(this).find("leader").text();
      					var color = "default";
+     					var members = "WIP"
      					switch(rep) {
      						case "1":
      							color = "success";
@@ -80,9 +81,9 @@
      							color = "default";
      					}
      					
-     					$("#all-btn").append("<li role='presentation'><a href='#"+name+"' aria-controls='"+leader+"' role='pill' data-toggle='pill'>"+name+"</a></li>")
+     					$("#all-btn").append("<li role='presentation'><a href='#"+leader+"' aria-controls='"+leader+"' role='pill' data-toggle='pill'>"+name+"</a></li>")
 
-     					$("#all-tab").append("<div role='tabpanel' class='tab-pane fade' id='"+name+"'><div class='panel panel-"+color+"' id='"+name+"'><div class='panel-heading'><h3><strong>"+name+"</strong> ["+rep+"] "+leader+"</h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div></div></div>");
+     					$("#all-tab").append("<div role='tabpanel' class='tab-pane fade' id='"+leader+"'><div class='panel panel-"+color+"' id='"+name+"'><div class='panel-heading'><h3><strong>"+name+"</strong> <em>Founder:</em> "+leader+" <em>Reputation:</em> ["+rep+"]</h3></div><div class='panel-body'><h3 class='badges' id='body-"+leader+"'></h3></div><div class='panel-footer'><em><strong>"+members+"</strong> members</em></div></div></div>");
 					$(this).find("ally").each(function(){
      						var id = $(this).attr("id");
      						$("#body-"+leader).append("<span class='label label-success'>"+id+"</span> ");
@@ -99,7 +100,7 @@
   			},
   
   			error: function(data){
-				$(".list").append("<div class='alert alert-danger'><strong>ERROR:</strong> parsing alliances, what is this !?")
+			alert("ERROR parsing alliances, what is this !?")
   			},
   
 			});
@@ -172,13 +173,32 @@
             </div>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<div class="well">
 					  <div class="tab-content" id="all-tab">
-    						<div role="tabpanel" class="tab-pane fade in active" id="legend"><h1>Legend:</h1></div>
-    						<div role="tabpanel" class="tab-pane fade" id="all"><h1>ALL</h1></div>
-    						<div role="tabpanel" class="tab-pane fade" id="none"><h1>NONE</h1></div>
+    						<div role="tabpanel" class="tab-pane fade well in active" id="legend">
+    							<h1>Legend:</h1>
+    							<p>Welcome to WAAC, the Worlds Adrift Alliance Codex. Powered by WANN, the Worlds Adrift News Network. Find on the side the toggle-able buttons to take you to that alliances information.</p>
+    							<ul>
+    								<li>Buttons coloured like <span class="label label-success">This</span> are Passive or Allied</li>
+    								<li>Buttons coloured like <span class="label label-primary">This</span> are Neutral</li>
+    								<li>Buttons coloured like <span class="label label-warning">This</span> are Aggresive</li>
+    								<li>Buttons coloured like <span class="label label-danger">This</span> are Hostile or Enemies</li>
+    							</ul>
+    							<p>In many cases official data about the alliances was unavailable, this will be marked with a <span class="glyphicon glyphicon-info-sign">. In these cases we've inferred the data from other sources!</p>
+    							<br>
+    							<h2>Other stuff:</h2>
+    							<p>WANN or the WAAC is unable to take responsibility for actions taken as a result of this feature unless done so by a member/representative of WANN. If your alliance is mentioned here and you are said alliance's leader and would like to request your alliance to be taken down then please leave an issue on the GitHub repo.</p>
+    							<br>
+    							<p>Simillarly, if you encounter an issue whilst using WANN or the WAAC then leave an issue on the Github repository, <a href="https://github.com/W-A-N-N/W-A-N-N.github.io" class="btn btn-primary">here</a></p>
+    						</div>
+    						<div role="tabpanel" class="tab-pane fade well" id="all">
+    							<h1>ALL</h1>
+    							<p>If this is mentioned in the Alliance page, then it refers to everyone by default unless otherwise stated.</p>
+    							</div>
+    						<div role="tabpanel" class="tab-pane fade well" id="none">
+    							<h1>NONE</h1>
+    							<p>If this is mentioned by the Alliance it means they have not assigned any alliance to that status yet.</p>
+    							</div>
   					</div>
-				</div>
 			</div>
         </div>
         <!-- /.row -->
