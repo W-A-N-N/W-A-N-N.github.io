@@ -38,16 +38,16 @@
      					var name = $(this).find("name").text();
      					var leader = $(this).find("leader").text();
      					var color = "default";
-     					if(7 >= rep > 5){
+     					if (5 < rep <= 7){
        						color = "warning";
-     					} else if(10 >= rep > 7){
+     					} else if(7 < rep <= 10){
        						color = "danger";
-     					} else if(5 >= rep > 3){
+     					} else if(3 < rep <= 5){
        						color = "primary";
-     					} else if(3 >= rep > 0){
+     					} else if(0 < rep <= 3){
        						color = "success";
      					}
-     					$("#list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h3>"+name+" ["+rep+"] <p>"+leader+"</p></h3></div><div class='panel-body'><h3 id='body-"+leader+"'></h3></div></div> ");
+     					$("#list").append("<div class='panel panel-"+color+"' id='"+leader+"'><div class='panel-heading'><h4><strong>"+name+"</strong> ["+rep+"] "+leader+"</h4></div><div class='panel-body'><h3 id='body-"+leader+"'></h3></div></div> ");
 					$(this).find("neutral").each(function(){
        						var id = $(this).attr("id");
        						$("#body-"+leader).append("<span class='label label-primary'>"+id+"</span>");
