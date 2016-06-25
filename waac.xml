@@ -58,7 +58,7 @@
 			<neutral id="ALL" />
 			<ally id="Sky Drifters" />
 			<ally id="ARK" />
-			<ally id="Blacklance">
+			<ally id="Blacklance" />
 			<ally id="Enkidu" />
 			<ally id="The Spiders Nest" />
 			<enemy id="NONE" />
