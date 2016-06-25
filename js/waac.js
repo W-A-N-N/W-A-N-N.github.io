@@ -27,4 +27,5 @@ $.ajax({
   
   error: function(data){
     alert("Error fetching feed! If this persists please leave an issue on the Github repo")
-  }
+  },
+});
