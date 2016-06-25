@@ -1,0 +1,15 @@
+<list>
+  <al rep="2">
+    <faction based="UK">The Sky Drifters</faction>
+    <founder>Day0x</founder>
+    <ally>
+      Blacklance, Ryders, Sky Lanes Travel Collective, Tempest Trade Fleet, WANMED, Pegasus, Traders of the Foundation, The Spiders Nest, The Harbourmen
+    </ally>
+    <neutral>
+       RageQuit, Dread Pirates
+    </neutral>
+    <enemy>
+      The Glorious Sky Armada
+    </enemy>
+  </al>
+</list>
