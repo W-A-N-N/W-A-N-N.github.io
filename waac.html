@@ -62,14 +62,11 @@
   							var name = $(this).find("name").text();
   							if(name === term){
   								id = $(this).find("leader").text();
-  								
+  								return id;
   							};
   						});
   						if(id === null){
   							return "No Such Thing"
-  						}
-  						else{
-  							return id;							
   						}
   
   					},
