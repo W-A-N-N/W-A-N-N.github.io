@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <wannfeed version="1.0" archive="false">
 	
-	<item1 no="6">
+	<item no="6">
 		<header>Weekly WA: 29th June</header>
 		<story id="6-1">
 			<title>WANN: Update!</title>
@@ -19,7 +19,7 @@
 			<title>Forum Watch:</title>
 			<desc><p>This weeks forum topic is: <a href="https://www.worldsadrift.com/forums/topic/around-the-world-in-80-days/">Around the World in 80 days</a>. A topic all about races and regattas in the Worlds Adrift universe. We personally think that we cant wait to get filming the sports! and its a great idea and we should all be lining up to take part!</p></desc>
 		</story>
-	</item1>
+	</item>
 	
 	<item no="5">
 		<header>Weekly WA: 22nd June</header>
