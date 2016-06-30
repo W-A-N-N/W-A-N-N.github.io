@@ -111,11 +111,20 @@
 		<name>The Library</name>
 		<leader>Clingbeetle</leader>
 		<relations>
-			<neutral id="ALLL" />
+			<neutral id="ALL" />
 			<ally id="The Core Techs" />
 			<ally id="Enkidu" />
 			<ally id="The Spiders Nest" />
 			<ally id="Bushidō" />
+			<enemy id="NONE" />
+		</relations>
+	</alliance>
+	<alliance rep="5" based="US">
+		<name>Orchestra</name>
+		<leader>Xerzie</leader>
+		<relations>
+			<neutral id="ALL" />
+			<ally id="Sky Drifters" />
 			<enemy id="NONE" />
 		</relations>
 	</alliance>
