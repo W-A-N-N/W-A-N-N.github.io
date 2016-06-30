@@ -21,6 +21,8 @@
         				return "ThirtiethElement";
         			case "The Library":
         				return "Clingbeetle";
+        			case "Orchestra":
+        			    return "Xerzie";
         			default:
         				return "404";
         		};
@@ -47,7 +49,7 @@
         			case "The Library":
         				return "https://www.worldsadrift.com/alliances/the-library/";
         			default:
-        				return "#404";
+        				return "https://www.worldsadrift.com/alliances/"+id+"/";
         		};
         	};
         }
