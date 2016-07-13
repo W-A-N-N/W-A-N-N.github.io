@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <wannfeed version="1.0" archive="false">
 	
+	<item no="8">
+		<header>Weekly WA: 13th July</header>
+		<story id="13th July-1">
+			<title>RSS Feed:</title>
+			<desc><p>We've got a RSS feed running for all those who want to get updates that way; The feed is organised slightly differently with each stroy as an item so be warned. SO here is the XML file link which you have to put into your feed reader: [http://feed43.com/wann-news.xml] this site will continue to be here and continue to include all the news we report.</p></desc>
+		</story>
+		<story id="13th July-2">
+			<title>Island Creator Update:</title>
+			<desc><p>As you have no doubt heard Bossa have updated the Island Creator to have even more easy-to-use cool tools for you you to create your island quicker. Thanks Bossa!</p></desc>
+		</story>
+		<story id="13th July-3">
+			<title>Armada Drama:</title>
+			<desc><p>So ufortunatly is looks like this might be a reoccuring title; however here's what happened. @vick-viper89 made a post (in reply to @louthinator) sugesting the Armada were in for fun and a roleplay faction, however this was later challenged by @louthinator saying that the Armada wouldnt be able to control their members and it would be a mess. While all this was going on @xerzie from the Free Skies Coallition jumped in defending the FSC from @louthinator on thier descision to put a 5+ member limit on players joining the FSC though reassuring that they would help smaller alliances in need of it. In addition @oldrockgod came in from the Armada dissmissing @louthinator earlier claims. To summarise: We now these things: (1) The armada are the natural enemy to the establishment; the ying to the yang. (2) The FSC will be the main defenders of the peace; A group dedicated to seeing the safe gameplay of the smaller players and alliances.</p></desc>
+		</story>
+		<story id="13th July-4">
+			<title>Forum Watch:</title>
+			<desc><p>Our favourite forum post this week is: <a href="https://www.worldsadrift.com/forums/topic/a-solution-to-cheaters-public-shaming/">A solution to cheaters: Public Shaming</a>; although not all agree with the proposition in Suggestions, it is certainly food for thought. Is it right or wrong? Thats why its our Forum Post of the Week.</p></desc>
+		</story>
+		<story id="13th July-5">
+			<title>Alliance Watch:</title>
+			<desc><p>Our Alliance this week is : <a href="https://www.worldsadrift.com/alliances/the-library/">The Library</a>, the crytpic league of nomads thats gonna chronicle everything. Yes, thats <strong>EVERYTHING</strong>. Though they allow alliance swapping they do not condone violence on other allainces; check their Codex stats on the WAAC!</p></desc>
+		</story>
+	</item>
+	
 	<item no="7">
 		<header>Weekly WA: 6th July</header>
 		<story id="7-1">
