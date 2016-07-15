@@ -18,19 +18,6 @@
 			<enemy id="The Sky Armada" />
 		</relations>
 	</alliance>
-	<alliance rep="5" based="US">
-		<name>Blacklance</name>
-		<leader>Ryulord</leader>
-		<relations>
-			<neutral id="RageQuit" />
-			<neutral id="Dread Pirates" />
-			<neutral id="The Core Techs" />
-			<ally id="Sky Drifters" />
-			<ally id="Traders Of the Foundation" />
-			<ally id="The Anchors Of Hummanity" />
-			<enemy id="The Sky Armada" />
-		</relations>
-	</alliance>
 	<alliance rep="2" based="US">
 		<name>Traders Of the Foundation</name>
 		<leader>BobioTheHobo</leader>
