@@ -85,6 +85,7 @@
 			<ally id="The Anchors Of Hummanity" />
 			<ally id="The Library" />
 			<ally id="The Core Techs" />
+			<ally id="Bushidō" />
 			<enemy id="NONE" />
 		</relations>
 	</alliance>
@@ -128,4 +129,42 @@
 			<enemy id="NONE" />
 		</relations>
 	</alliance>
+	<alliance rep="8" based="EU">
+		<name>The Sky Armada</name>
+		<leader>Exovaldes</leader>
+		<relations>
+			<neutral id="ALL" />
+			<ally id="NONE" />
+			<enemy id="Sky Drifters" />
+			<enemy id="WANMED" />
+		</relations>
+	</alliance>
+	<alliance rep="5" based="NZ/AU">
+		<name>Wander</name>
+		<leader>Moot</leader>
+		<relations>
+			<neutral id="ALL" />
+			<ally id="NONE" />
+			<enemy id="NONE" />
+		</relations>
+	</alliance>
+	<alliance rep="3" based="US">
+		<name>Timeless</name>
+		<leader>Natony_123</leader>
+		<relations>
+			<neutral id="ALL" />
+			<ally id="NONE" />
+			<enemy id="NONE" />
+		</relations>
+	</alliance>
+	<alliance rep="4" based="US">
+		<name>Aviator Innovators</name>
+		<leader>YakkoForever</leader>
+		<relations>
+			<neutral id="ALL" />
+			<ally id="NONE" />
+			<enemy id="NONE" />
+		</relations>
+	</alliance>
+	
 </alliancelist>
