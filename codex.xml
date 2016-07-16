@@ -51,17 +51,6 @@
 			<enemy id="NONE" />
 		</relations>
 	</alliance>
-	<alliance rep="5" based="EU">
-		<name>The Spiders Nest</name>
-		<leader>TheRecluse</leader>
-		<relations>
-			<neutral id="ALL" />
-			<ally id="Sky Drifters" />
-			<ally id="The Library" />
-			<ally id="The Anchors Of Hummanity" />
-			<enemy id="NONE" />
-		</relations>
-	</alliance>
 	<alliance rep="3" based="EU">
 		<name>Enkidu</name>
 		<leader>Enin</leader>
@@ -82,16 +71,6 @@
 		<relations>
 			<neutral id="ALL" />
 			<ally id="NONE" />
-			<enemy id="NONE" />
-		</relations>
-	</alliance>
-	<alliance rep="7" based="GL">
-		<name>The Core Techs</name>
-		<leader>ThirtiethElement</leader>
-		<relations>
-			<neutral id="ALL" />
-			<ally id="Enkidu" />
-			<ally id="The Library" />
 			<enemy id="NONE" />
 		</relations>
 	</alliance>
@@ -118,7 +97,7 @@
 	</alliance>
 	<alliance rep="8" based="EU">
 		<name>The Sky Armada</name>
-		<leader>Exovaldes</leader>
+		<leader>SonofEarl</leader>
 		<relations>
 			<neutral id="ALL" />
 			<ally id="NONE" />
